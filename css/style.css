@@ -43,62 +43,7 @@ img{
   transition: all 0.5s;
 }
 
-.gtt_img{
-  margin-right: auto;
-  margin-left : 2vw;
-  padding:0px;
-}
-.menu-group{
-  margin-right: 1vw;
-  margin-left : auto;
-}
 
-.menu-item {
-  display: inline-block;
-
-  font-family : "arial black" ,"sans-serif";
-  font-size: 20px;
-
-  padding: 0px;
-  margin-right: 20px;
-}
-
-.menu-item a:hover{
-  color:rgb(255, 19, 19);
-  transition: 0.25s ;
-}
-
-.underline{
-  background: linear-gradient(to right, #ff6363, #05ddd2);
-  /* background:#ffffff; */
-	background-repeat: no-repeat;
-	background-size: 0% 12%;
-  background-position: bottom;
-	transition: all 0.25s ease-in;
-}
-.underline:hover{
-	background-size: 100% 12%;
-}
-
-/* ウィンドウ幅が0〜480pxの場合に適用するCSS */
-@media screen and ( max-width:480px )
-{
-  .gtt_img{
-    margin-right: auto;
-    margin-left : 2vw;
-    padding:0px;
-  }
-
-  .menu-item {
-    list-style: none;
-    display: inline-block;
-    
-    font-family : "arial black" ,"sans-serif";
-    font-size: 14px;
-    padding: 0px;
-    margin-right: 3vw;
-  }
-}
 /****************************************
           to the top
 *****************************************/

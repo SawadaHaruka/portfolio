@@ -41,7 +41,18 @@ nav{
   color:rgb(255, 19, 19);
   transition: 0.25s ;
 }
- 
+
+.underline{
+  background: linear-gradient(to right, #ff1313, #ff1313);
+  /* background:#ffffff; */
+	background-repeat: no-repeat;
+	background-size: 0% 12%;
+  background-position: bottom;
+	transition: all 0.25s ease-in;
+}
+.underline:hover{
+	background-size: 100% 12%;
+}
  
 .menu{
   padding-top: 100px;
@@ -151,17 +162,4 @@ nav{
 background-color:transparent;
 }
 
-
-
-.underline{
-  background: linear-gradient(to right, #ff6363, #05ddd2);
-  /* background:#ffffff; */
-	background-repeat: no-repeat;
-	background-size: 0% 12%;
-  background-position: bottom;
-	transition: all 0.25s ease-in;
-}
-.underline:hover{
-	background-size: 100% 12%;
-}
 }
