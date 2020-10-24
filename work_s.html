@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>しんかい2020</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style_menu.css">
+
+  <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
+  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
+  <script src="https://unpkg.com/scrollreveal"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="header" class="header">
+    <nav>
+     <div class="drawer">
+       <div id="logo"><a href="index.html"><img src="img/button.png"></a></div>
+    <div class="Toggle">
+    　　<span></span>
+    　　<span></span>
+    　　<span></span>
+    </div>
+      </div>
+     <div class="menu">
+      <ul>
+        <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
+        <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
+        <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
+      </ul>
+     </div>
+    </nav>
+  </div>
+  <div class="ttt" id="ttt"><img src="img/ttt.png" alt="to the top" srcset="img/ttt.svg" width="65" height="67"></div>
+
+  <div class="content">
+    <div class="bg_s_color">
+      <br>
+      <div class="logo_area">
+        <img src="img/shinkai/logo_s.png" alt="しんかい2020ロゴ" srcset="img/shinkai/logo_s.svg" width="100%" height="100%">
+      </div>
+      <canvas id="cjsCanvas" class="cjsCanvas"></canvas>
+      <div class="button_game">
+        <a href="https://sawadaharuka.github.io/shinkai2020/" target="_blank" rel="noopener noreferrer"><img src="img/button.png"></a>
+      </div>
+
+
+      <div class="bg_s">
+        <h2 class="work">しんかい2020</h2>
+        <p class="work">ゲームデザイン</p>
+        <p class="work"><strong>制作期間</strong></p>
+        <p class="work">１ヶ月（授業課題）/ 2020</p>
+        <p class="work"><strong>使用したソフトウェア</strong></p>
+        <p class="work">Visual Studio Code (JavaScript) / Illustrator / animateCC</p>
+        <ul class="icon-group">
+          <li class="icon"><img src="img/VScode.png" alt="Visual Studio Codeアイコン"srcset="img/VScode.svg"width="55" height="55"></li>
+          <li class="icon"><img src="img/ai.png" alt="Aiアイコン" srcset="img/ai.svg" width="55" height="55"></li>
+        </ul>
+        <p class="line work"></p>
+        <p class="work"><strong>作品説明</strong></p>
+        <p class="work">しんかい2020は、授業の課題で作ったスマートフォン用のゲームです。<br>
+          htmlやcssなど存在すら知らなかった中、ほぼ初めてJavaScriptに触れました。canvasタグ内のJavaScriptのみに取り組みました</p>
+        <p class="work">深海生物が大好きだったので、「しんかい2020」という深海2000メートル辺りを潜る、架空の潜水艦を操作して、深海生物を採取するというゲームを作りました。</P>
+        <p class="work">
+          トップページとプレイ方法の説明ページのアニメーションや、深海生物の動き、時間制限に力を入れて作りました。その他深海生物の個体数により点数を変えることや、深海生物の向きを変える等の工夫をしました。<br>
+          ライブラリはcreatejsを使用しました。スタートボタンから遊べますのでぜひ飛んでみてください。</p>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./js/work_shinkai2020.js"></script>
+  <script type="module" src="./js/Text_anime.js"></script>
+  <script type="module" src="./js/Scroll.js"></script>
+</body>
+
+</html>
