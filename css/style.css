@@ -43,7 +43,6 @@ img{
   transition: all 0.5s;
 }
 
-
 /****************************************
           to the top
 *****************************************/
@@ -429,4 +428,14 @@ _::-webkit-full-page-media, _:future, :root .icon_box img{
 
 .me img{
   width:50%;
+}
+
+.caption{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:300;
+}
+
+h2{
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight:300;
 }
