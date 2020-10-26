@@ -17,7 +17,8 @@ export class Scroll {
         this.hd.style.shadow='0 3px 8px 0 rgba(2, 23, 58, 0.2)' ;
         this.ttt.style.opacity= '0';
       }else{
-        this.hd.style.background = '#a0dfda';
+        // this.hd.style.background = '#a0dfda';
+        this.hd.style.background = '#92eadf';
         this.ttt.style.opacity= '1';
         this.mouse_evt(this.ttt);
       }

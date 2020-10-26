@@ -73,6 +73,13 @@ img{
   width:100%;
 }
 
+.SawadaHaruka{
+  position: absolute;
+  text-align: center;
+  width:100%;
+  z-index: 2;
+}
+
 .stage {
   position: relative;
   text-align: center;

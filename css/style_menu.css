@@ -38,12 +38,12 @@ nav{
   margin-right: 20px;
 }
 .menu-item a:hover{
-  color:rgb(255, 19, 19);
+  color:rgb(255, 0, 61);
   transition: 0.25s ;
 }
 
 .underline{
-  background: linear-gradient(to right, #ff1313, #ff1313);
+  background: linear-gradient(to right, #ff003d, #ff003d);
   /* background:#ffffff; */
 	background-repeat: no-repeat;
 	background-size: 0% 12%;
@@ -58,7 +58,7 @@ nav{
   padding-top: 100px;
   padding-bottom: 150px;
   text-align:center;
-  background-color:#a0dfda;
+  background-color:#92eadf;
   transition: 0.5s ease-out;/*滑らかに表示*/
   transform: translateY(-150%);/*画面より100%外へ押し出し非表示にさせる*/
   -webkit-transform: translateY(-150%);
@@ -84,9 +84,9 @@ nav{
 .Toggle span {
     display: block;
     position: absolute;
-    width: 40px;
-    border-radius: 5px;
-    border-bottom: solid 4px #333;
+    width: 35px;
+    border-radius: 2px;
+    border-bottom: solid 2px rgb(0, 0, 0);
     -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
     -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
     transition: .35s ease-in-out;			/*変化の速度を指定*/
@@ -96,13 +96,13 @@ nav{
     top:5px;
 }
  .Toggle span:nth-child(2) {
-    top: 18px;
+    top: 16px;
 }
  .Toggle span:nth-child(3) {
-    top: 32px;
+    top: 28px;
 }
 .Toggle.active span:nth-child(1) {
-    top: 18px;
+    top: 16px;
 /* 1番目のspanをマイナス45度に */
     -webkit-transform: rotate(-45deg);
     -moz-transform: rotate(-45deg);
