@@ -1,8 +1,7 @@
 export class Shinkai {
   constructor() {
     this.initCjs();
-    // マウスオーバーを有効にする
-    this.stage.enableMouseOver();
+
     this.set();
   }
   
