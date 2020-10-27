@@ -1,4 +1,4 @@
-export class Main2 {
+export class Top {
   constructor() {
     document.addEventListener("DOMContentLoaded", this.two_js(), false);
     this.elements();
@@ -58,9 +58,10 @@ export class Main2 {
       tri.rotation = frameCount / 130;
     });
 
-    tri._renderer.elem.addEventListener("mouseover", () => {
+    tri._renderer.elem.addEventListener("click", () => {
       tri.fill = this.gladation_color();
-
+    });
+    tri._renderer.elem.addEventListener("mouseover", () => {
       this.two.bind('update', function (frameCount, timeDelta) {
         tri.rotation = frameCount / 20;
       });
@@ -85,7 +86,7 @@ export class Main2 {
       this.rects.push(rect);
     }
     this.group = this.two.makeGroup(this.rects);
-    this.group.translation.set(this.s_w * 3/ 4, this.s_h / 2);
+    this.group.translation.set(this.s_w * 3 / 4, this.s_h / 3);
 
     this.rects2 = [];
     for (let j = 0; j < 12; j++) {
@@ -101,7 +102,7 @@ export class Main2 {
       this.rects2.push(rect2);
     }
     this.group2 = this.two.makeGroup(this.rects2);
-    this.group2.translation.set(this.s_w * 3/ 4, this.s_h / 2);
+    this.group2.translation.set(this.s_w * 4 / 5, this.s_h * 2 / 5);
 
     this.BIGgroup = this.two.makeGroup(this.group, this.group2);
     this.BIGgroup.opacity = 0;
@@ -110,6 +111,8 @@ export class Main2 {
     this.animation();
     this.move();
 
+    let shape = this.two.interpret(document.getElementById('SawadaHaruka')).center();
+    shape.translation.set(this.s_w / 2, this.s_h / 2);
     /*
     *
     ウィンドウのリサイズによって変える
@@ -119,8 +122,8 @@ export class Main2 {
       this.s_w = this.two.width = window.innerWidth;
       this.s_h = this.two.height = window.innerHeight;
 
-      this.group.translation.set(this.s_w * 3/ 4, this.s_h / 2);
-      this.group2.translation.set(this.s_w * 3/ 4, this.s_h / 2);
+      this.group.translation.set(this.s_w * 3 / 4, this.s_h / 3);
+      this.group2.translation.set(this.s_w * 4 / 5, this.s_h * 2 / 5);
 
       frame.translation.set(this.s_w / 2, this.s_h / 2);
       frame.width = this.s_w;
@@ -128,20 +131,21 @@ export class Main2 {
 
       tri.translation.set(this.s_w / 4, this.s_h * 2 / 3);
 
+      shape.translation.set(this.s_w / 2, this.s_h / 2);
+      shape.width = this.s_w;
+      shape.height = this.s_h;
     }, false);
   }
 
   animation() {
     createjs.Tween.get(this.BIGgroup)
       .to({ opacity: 1, scale: 1 }, 300, createjs.Ease.elasticOut);
-    this.two.play();
-    this.two.update();
   }
 
   move() {
     let oldSeconds;
     let state = 0;
-    let kaiten = Math.ceil(Math.random() * 4) ; //ランダムで決める回転数
+    let kaiten = Math.ceil(Math.random() * 4); //ランダムで決める回転数
 
     this.st = 0;
     this.sta = 0;
@@ -224,15 +228,11 @@ export class Main2 {
         // }
 
       }
-
-
-    }).play();
+    });
     this.two.update();
   }
 
 
 
 }
-
-
-let main2 = new Main2();
+let top_anime = new Top();

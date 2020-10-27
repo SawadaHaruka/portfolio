@@ -1,6 +1,6 @@
  /*ロゴの大きさを調整*/
 #logo img {
-  max-width:50%;
+  max-width:60%;
 }
  
 nav{
@@ -30,10 +30,7 @@ nav{
 
 .menu-item {
   display: inline-block;
-
-  font-family : "arial black" ,"sans-serif";
   font-size: 30px;
-
   padding: 0px;
   margin-right: 20px;
 }
@@ -44,14 +41,13 @@ nav{
 
 .underline{
   background: linear-gradient(to right, #ff003d, #ff003d);
-  /* background:#ffffff; */
 	background-repeat: no-repeat;
-	background-size: 0% 12%;
+	background-size: 0% 8%;
   background-position: bottom;
 	transition: all 0.25s ease-in;
 }
 .underline:hover{
-	background-size: 100% 12%;
+	background-size: 100% 8%;
 }
  
 .menu{
@@ -119,7 +115,7 @@ nav{
 }
  
 /*----------------------------------ここからPCモニターの記述-----------*/
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 762px) {
  
 /*ロゴの大きさを調整*/
 #logo img{max-width:250px;}	
@@ -141,9 +137,7 @@ nav{
 }
 
 .menu-item {
-  font-family : "arial black" ,"sans-serif";
   font-size: 25px;
-
   margin-right: 20px;
 }
 

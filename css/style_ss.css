@@ -1,35 +1,108 @@
 body {
   padding: 0;
   margin: 0;
-  background-color:#000000;
-
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:300;
+  background-color: #000000;
+  font-family: "Libre Franklin", sans-serif, "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
 }
 
 a {
-  margin:0;
-  padding:0;
+  margin: 0;
+  padding: 0;
 
   text-decoration: none;
-  color: #f9fcff;
+  color: #000000;
 }
 
-ul{
-  margin:0;
-  padding:0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-li{
-  margin:0;
-  padding:0;
+li {
+  margin: 0;
+  padding: 0;
 
   list-style: none;
 }
 
-img{
-  margin:0;
-  padding:0;
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.content {
+  margin: 0 auto;
+  position: relative;
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.bg {
+  line-height: 2;
+
+  margin: 0;
+  padding: 0 18vw;
+  position: relative;
+  background-color: #000000;
+}
+
+
+.bg_ss {
+  margin-bottom: 200px;
+}
+
+.bg_movie{
+  margin-top: -22px;
+  padding: 0 18vw;
+  background-color: #000000;
+}
+.movie{
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+.movie iframe{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 762px) {
+  .bg {
+    padding: 4vw;
+  }
+  .bg_movie{
+    padding: 0;
+  }
+}
+
+
+.line {
+  border-bottom: 1px solid #fff;
+}
+
+/****************************************
+          main
+*****************************************/
+.main_img {
+  position: relative;
+
+  width: 100%;
+  height: auto;
+
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+/****************************************
+
+*****************************************/
+/*ロゴの大きさを調整*/
+#logo img {
+  max-width: 50%;
 }
 
 /****************************************
@@ -40,278 +113,187 @@ img{
   display: flex;
   width: 100%;
   height: 60px;
-  background-color: #0008;
+  background-color: #000;
   align-items: center;
   position: fixed;
 }
 
 .menu-item {
   display: inline-block;
-
-  font-family : "arial black" ,"sans-serif";
   font-size: 20px;
-
   padding: 0px;
   margin-right: 20px;
 }
 
-.menu-item a:hover{
-  color:#b1b1b1;
-  }
+.menu-item a:hover {
+  color: #b1b1b1;
+}
 
-.underline{
-	background: linear-gradient(to right, #00ffea, #ffd257);
-	background-repeat: no-repeat;
-	background-size: 0% 12%;
+.underline {
+  background: linear-gradient(to right, #00ffea, #ffd257);
+  background-repeat: no-repeat;
+  background-size: 0% 12%;
   background-position: bottom;
-	transition: all 0.25s ease-in;
+  transition: all 0.25s ease-in;
 }
-.underline:hover{
-	background-size: 100% 12%;
-}
-
-
-.content{
-  margin:0 auto;
-  position: relative;
-  color:#f9fcff;
+.underline:hover {
+  background-size: 100% 12%;
 }
 
-.bg{
-  line-height:1.8;
-
-  margin:0;
-  padding:0 20vw 120px;
-  position: relative;
-}
-
-.bg2{
-  line-height: 2.2;
-
-  margin:0;
-  padding:80px 20vw;
-  background-color:#042d75; 
-  position: relative;
-}
-
-.bg_ss{
-  background-color:#000000; 
-}
-
-@media screen and ( max-width:762px )
-{
-  .bg{
-    padding:4vw;
-  }
-  .bg2{
-    padding:4vw;
-  }
-}
-
-.icon{
-  position: static;
-  margin: 10px;
-  display: inline-block;
-}
-
-.line{
-  border-bottom: 1px solid #fff;
-}
-/****************************************
-          main
-*****************************************/
-.main_img{
-  position: relative;
-
+nav {
   width: 100%;
-  height:auto;
-
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  height: 70px;
+  position: relative;
 }
 
-/****************************************
-
-*****************************************/
-.link_to_movie{
-  text-align: center;
-  padding:30px;
-  margin:0 20vw 120px;
-  border-radius: 50px;
-  background: linear-gradient(to right, #00ffea, #ffb25a);
-
-  font-size: 20px;
-  color:#000;
-
-  transition-duration: 0.5s;
+.drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
+  padding: 0 1em;
 }
 
-.link_to_movie:hover{
-  background: linear-gradient(to right, #02ddcb, #d19648);
-  transform: scale(0.98);
-  color:#fff;
-}
-
-
- /*ロゴの大きさを調整*/
- #logo img {
-  max-width:50%;
-}
- 
-nav{
- width: 100%;
- height: 70px;
- position: relative;
-}
- 
-.drawer{
- display: flex;
- flex-direction: row;
- align-items: center;
- justify-content: space-between;
- position: relative;
- height: 70px;
- padding: 0 1em;
-}
- 
 /*ナビゲーション部分*/
- 
+
 .menu ul li {
-  display:block;
-  font-weight:bold;
+  display: block;
+  font-weight: bold;
   padding: 2em;
-  text-decoration:none;
+  text-decoration: none;
 }
 
 .menu-item {
   display: inline-block;
-
-  font-family : "arial black" ,"sans-serif";
   font-size: 30px;
 
   padding: 0px;
   margin-right: 20px;
 }
 
-.menu-item a:hover{
-  color:#3b3b3b;
+.menu-item a:hover {
+  color: #ffffff;
   transition: 0.25s;
-  }
- 
-.menu{
-  padding-top: 100px;
-  padding-bottom: 150px;
-  text-align:center;
-  background: linear-gradient(to right, #00ffea, #ffb25a);
-  transition: 0.5s ease-out;/*滑らかに表示*/
-  transform: translateY(-150%);/*画面より100%外へ押し出し非表示にさせる*/
-  -webkit-transform: translateY(-150%);
-}
- 
-/*OPEN時の動き*/
-.menu.open {
- -webkit-transform: translateY(-10%);
- transform: translateY(-10%);/*メニューを元の位置へ戻す*/
-}
- 
-/*トグルボタンのスタイルを指定*/
-.Toggle {
-    display: block;
-    position: fixed;    /* bodyに対しての絶対位置指定 */
-    width: 42px;
-    height: 42px;
-    cursor: pointer;
-    z-index: 3;
-  right:15px;
-}
- 
-.Toggle span {
-    display: block;
-    position: absolute;
-    width: 40px;
-    border-radius: 5px;
-    border-bottom: solid 4px rgb(255, 255, 255);
-    -webkit-transition: .35s ease-in-out;	/*変化の速度を指定*/
-    -moz-transition: .35s ease-in-out;		/*変化の速度を指定*/
-    transition: .35s ease-in-out;			/*変化の速度を指定*/
-}
- /*各ボーダー少しずつずらす*/
-.Toggle span:nth-child(1) {
-    top:5px;
-}
- .Toggle span:nth-child(2) {
-    top: 18px;
-}
- .Toggle span:nth-child(3) {
-    top: 32px;
 }
 
-.Toggle.active span{
-  border-bottom: solid 4px rgb(0, 0, 0);
+.menu {
+  padding-top: 100px;
+  padding-bottom: 150px;
+  text-align: center;
+  background: linear-gradient(to right, #00ffea, #ffb25a);
+  transition: 0.5s ease-out; /*滑らかに表示*/
+  transform: translateY(-150%); /*画面より100%外へ押し出し非表示にさせる*/
+  -webkit-transform: translateY(-150%);
+}
+
+/*OPEN時の動き*/
+.menu.open {
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%); /*メニューを元の位置へ戻す*/
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+  display: block;
+  position: fixed; /* bodyに対しての絶対位置指定 */
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 3;
+  right: 15px;
+}
+
+.Toggle span {
+  display: block;
+  position: absolute;
+  width: 35px;
+  border-radius: 2px;
+  border-bottom: solid 2px rgb(255, 255, 255);
+  -webkit-transition: 0.35s ease-in-out; /*変化の速度を指定*/
+  -moz-transition: 0.35s ease-in-out; /*変化の速度を指定*/
+  transition: 0.35s ease-in-out; /*変化の速度を指定*/
+}
+/*各ボーダー少しずつずらす*/
+.Toggle span:nth-child(1) {
+  top: 5px;
+}
+.Toggle span:nth-child(2) {
+  top: 16px;
+}
+.Toggle span:nth-child(3) {
+  top: 28px;
+}
+
+.Toggle.active span {
+  border-bottom: solid 2px rgb(0, 0, 0);
 }
 .Toggle.active span:nth-child(1) {
-    top: 18px;
-/* 1番目のspanをマイナス45度に */
-    -webkit-transform: rotate(-45deg);
-    -moz-transform: rotate(-45deg);
-    transform: rotate(-45deg);
+  top: 16px;
+  /* 1番目のspanをマイナス45度に */
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  transform: rotate(-45deg);
 }
- 
+
 /* 2番目と3番目のspanを45度に */
 .Toggle.active span:nth-child(2),
 .Toggle.active span:nth-child(3) {
-    top: 18px;
-    -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    transform: rotate(45deg);
+  top: 18px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
- 
+
 /*----------------------------------ここからPCモニターの記述-----------*/
 @media screen and (min-width: 600px) {
- 
-/*ロゴの大きさを調整*/
-#logo img{max-width:250px;}	
-	
-nav{
- display: flex;
-}
- 
-.Toggle{
- display: none;
-}
-.menu{
-  width: 100%;
-  background: transparent;
-  margin:0;
-  padding: 0px;
-  transform: translateY(0);/*画面より100%外へ押し出し非表示にさせる*/
-  -webkit-transform: translateY(0%);
-}
-
-.menu-item {
-  font-family : "arial black" ,"sans-serif";
-  font-size: 25px;
-
-  margin-right: 20px;
-}
-
-.menu-item a:hover{
-  color:#b1b1b1;
-  transition: 0.25s;
+  /*ロゴの大きさを調整*/
+  #logo img {
+    max-width: 250px;
   }
 
-.menu ul{
- height: 70px;
- display: flex;
- flex-wrap: wrap;
- justify-content: flex-end;
- align-items: center;
-}
-.menu ul li{
- padding: 0 1em;
- border-bottom: none;
-}
-.menu ul li:hover{
-background-color:transparent;
-}
+  nav {
+    display: flex;
+  }
+
+  .Toggle {
+    display: none;
+  }
+  .menu {
+    width: 100%;
+    background: transparent;
+    margin: 0;
+    padding: 0px;
+    transform: translateY(0); /*画面より100%外へ押し出し非表示にさせる*/
+    -webkit-transform: translateY(0%);
+  }
+
+  .menu-item {
+    font-size: 25px;
+    margin-right: 20px;
+  }
+  .menu-item a {
+    color: #fff;
+  }
+
+  .menu-item a:hover {
+    color: #b1b1b1;
+    transition: 0.25s;
+  }
+
+  .menu ul {
+    height: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .menu ul li {
+    padding: 0 1em;
+    border-bottom: none;
+  }
+  .menu ul li:hover {
+    background-color: transparent;
+  }
 }

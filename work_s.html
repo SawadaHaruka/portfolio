@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>しんかい2020</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/style_menu.css">
 
@@ -12,7 +13,7 @@
   <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 
 </head>
 
@@ -20,7 +21,7 @@
   <div id="header" class="header">
     <nav>
      <div class="drawer">
-       <div id="logo"><a href="index.html"><img src="img/button.png"></a></div>
+       <div id="logo"><a href="index.html"><img src="img/logo_SH.svg" width="250" height="auto"></a></div>
     <div class="Toggle">
     　　<span></span>
     　　<span></span>
@@ -33,6 +34,7 @@
         <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
         <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
       </ul>
+      <br><br><br>
      </div>
     </nav>
   </div>
@@ -46,35 +48,51 @@
       </div>
       <canvas id="cjsCanvas" class="cjsCanvas"></canvas>
       <div class="button_game">
-        <a href="https://sawadaharuka.github.io/shinkai2020/" target="_blank" rel="noopener noreferrer"><img src="img/button.png"></a>
+        <a href="https://sawadaharuka.github.io/shinkai2020/" target="_blank" rel="noopener noreferrer"><img src="img/button.png" width="250" height="auto"></a>
       </div>
 
 
       <div class="bg_s">
-        <h2 class="work">しんかい2020</h2>
-        <p class="work">ゲームデザイン</p>
-        <p class="work"><strong>制作期間</strong></p>
+        <h1 class="h1_thin work">しんかい2020 / DEEP SEA EXPLORATION 2020</h1>
+        <p class="line work"></p>
+        <p class="work">UIデザイン　ゲームデザイン</p>
+        <h3 class="work">課題設定</h3>
+        <p class="work">「得点の概念を入れたゲームを作ろう」</p>
+        <h3 class="work">制作期間</h3>
         <p class="work">１ヶ月（授業課題）/ 2020</p>
-        <p class="work"><strong>使用したソフトウェア</strong></p>
+        <h3 class="work">使用したソフトウェア</h3>
         <p class="work">Visual Studio Code (JavaScript) / Illustrator / animateCC</p>
         <ul class="icon-group">
           <li class="icon"><img src="img/VScode.png" alt="Visual Studio Codeアイコン"srcset="img/VScode.svg"width="55" height="55"></li>
           <li class="icon"><img src="img/ai.png" alt="Aiアイコン" srcset="img/ai.svg" width="55" height="55"></li>
         </ul>
         <p class="line work"></p>
-        <p class="work"><strong>作品説明</strong></p>
-        <p class="work">しんかい2020は、授業の課題で作ったスマートフォン用のゲームです。<br>
-          htmlやcssなど存在すら知らなかった中、ほぼ初めてJavaScriptに触れました。canvasタグ内のJavaScriptのみに取り組みました</p>
-        <p class="work">深海生物が大好きだったので、「しんかい2020」という深海2000メートル辺りを潜る、架空の潜水艦を操作して、深海生物を採取するというゲームを作りました。</P>
-        <p class="work">
-          トップページとプレイ方法の説明ページのアニメーションや、深海生物の動き、時間制限に力を入れて作りました。その他深海生物の個体数により点数を変えることや、深海生物の向きを変える等の工夫をしました。<br>
-          ライブラリはcreatejsを使用しました。スタートボタンから遊べますのでぜひ飛んでみてください。</p>
+        <h1 class="work">作品説明</h1>
+        <h3 class="work">ゲームデザイン</h3>
+        <p class="work">しんかい2020は授業の課題で作った、制限時間30秒で手軽に遊べるスマートフォン用のゲームです。<br>深海生物が大好きだったので、「しんかい2020」という深海2000メートル辺りを潜る、架空の深海探査艇を操作して、深海生物を採取するというゲームを作りました。</p>
+        <p class="work">真っ暗闇の深海に潜んでいる深海生物に、タップして動かした深海探査艇のライトが当たると深海生物が照らされて浮かび上がります。現れた深海生物をさらにタップすると、深海生物を採取することができます。</p>
+        <p class="work">指一本で遊べる手軽さも考えてゲームのデザインを行いました。</P>
+        <br>
+        <h3 class="work">自然に見せる工夫</h3>
+        <p class="work">遊んでみて快適に感じるように細かな工夫をたくさん施しました。</p>
+        <ul class="work">
+          <li>トップページとプレイ方法の説明ページのアニメーション</li>
+          <li >深海生物のアニメーション</li>
+          <li>制限時間が残り５秒になったら数字が赤くなる</li>
+          <li>深海生物が画面の端に当たったら進行方向と向きが変わる</li>
+          <li>採取したときのサウンド</li>
+          <li>タップしたところまで近づく深海探査艇の向きがチラチラと変わらないように判定</li>
+          <li>ゲーム中とゲーム終了後のリザルト画面のBGMが変わる</li>
+          <li>深海生物の個体数により点数を変える</li>
+        </ul>
+        <p class="work">ほとんどプログラミングのことがわからなかった中、授業ではcanvasタグ内に描画されるJavaScriptに取り組みました。<br>後々、なんとなくプログラミングのことがわかってきたので、改めてこのサイトに載せられる形にCSSを調整してホスティングを行いました。</p>
+        <p class="work">上のスタートボタンから飛べますのでぜひ遊んでみてください。もちろんパソコンでもお試しいただけます！</p>
       </div>
     </div>
   </div>
 
   <script type="module" src="./js/work_shinkai2020.js"></script>
-  <script type="module" src="./js/Text_anime.js"></script>
+  <script type="module" src="./js/ttt_menu_text.js"></script>
   <script type="module" src="./js/Scroll.js"></script>
 </body>
 

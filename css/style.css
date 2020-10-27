@@ -1,32 +1,35 @@
 body {
   padding: 0;
   margin: 0 auto;
-  background-color:#fff;
+  background-color: #fff;
 
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:300;
+  font-family: "Libre Franklin", sans-serif, "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
 }
+/* body::-webkit-scrollbar {
+  display:none;
+} */
 
-a{
+a {
   text-decoration: none;
-  color:#000000;
+  color: #000000;
 }
 
-ul{
-  margin:0;
-  padding:0;
+ul {
+  margin: 0;
+  padding: 0;
 }
 
-li{
-  margin:0;
-  padding:0;
-
-  list-style: none;
+li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
 }
 
-img{
-  margin:0;
-  padding:0;
+img {
+  margin: 0;
+  padding: 0;
 }
 
 /****************************************
@@ -39,168 +42,177 @@ img{
   position: fixed;
   width: 100%;
   height: 60px;
-  /* background-color: #93dbec; */
   transition: all 0.5s;
 }
 
 /****************************************
-          to the top
+          to the top(page)
 *****************************************/
-.ttt{
-  z-index: 100;
+.ttt {
+  z-index: 3;
   display: flex;
   position: fixed;
-  bottom:10px;
-  right:10px;
-  opacity:0;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
   transition: all 0.6s ease-out;
 }
-.ttt img{
+.ttt img {
   transition: 0.6s ease-out;
 }
-.ttt img:hover{
-  opacity:0.5;
+.ttt img:hover {
+  opacity: 0.5;
 }
 /****************************************
           contents
 *****************************************/
-.content{
-  margin:0 auto;
-  padding:0;
+.content {
+  margin: 0 auto;
+  padding: 0;
   position: relative;
-  background-color: #e9eff7;
-  color:#000; 
-  width:100%;
+  background-color: #ffffff;
+  color: #000;
+  width: 100%;
 }
 
-.SawadaHaruka{
-  position: absolute;
-  text-align: center;
-  width:100%;
-  z-index: 2;
+.SawadaHaruka {
+  display: none;
 }
 
-.stage {
-  position: relative;
-  text-align: center;
-}
-
-#svgStage{
-z-index: 1;
-position: relative;
-}
-
-.bg{
-  line-height:1.8;
-
-  margin:0 auto;
-  padding:0 18vw 120px;
+#svgStage {
+  z-index: 1;
   position: relative;
 }
 
-.bg2{
-  color:#e1f5f5;
+.bg {
+  line-height: 2;
+
+  margin: 0 auto;
+  padding: 0 18vw 120px;
+  position: relative;
+}
+
+.bg2 {
+  color: #ffffff;
   line-height: 2.2;
 
-  margin:0 auto;
-  padding:50px 20vw;
-  background-color:#042d75; 
+  margin: 0 auto;
+  padding: 60px 18vw;
+  background-color: #042d75;
   position: relative;
 }
 
-.bg3{
-  color:#e1f5f5;
-  line-height: 1.8;
-
-  margin:0;
-  padding:60px 20vw;
-  background-color:#313949; 
+.bg3 {
+  color: #ffffff;
+  line-height: 2;
+  margin: 0;
+  padding: 60px 18vw;
+  background-color: #313949;
   position: relative;
 }
 
-.bg_s_color{
-  background: linear-gradient( #b2f0ff,#4faceb, #07346b, #000e1f);
-}
-.bg_s{
+.bg4 {
+  color: #ffffff;
+  line-height: 2;
+  margin: 0;
+  padding: 70px 18vw;
+  background-color: #476194;
   position: relative;
-  color:#ffffff;
-  line-height:1.8;
-  margin:0;
-  padding:0 20vw 120px;
 }
 
-.cjsCanvas{
+.bg_s_color {
+  background: linear-gradient(#b2f0ff, #4faceb, #07346b, #000e1f);
+}
+.bg_s {
+  position: relative;
+  color: #ffffff;
+  line-height: 2;
+  margin: 0;
+  padding: 0 20vw 120px;
+}
+
+.cjsCanvas {
   position: absolute;
-  margin:0;
-  top:50px;
-  padding:0;
+  margin: 0;
+  top: 50px;
+  padding: 0;
 }
 
-.bg_other{
-  text-align:center;
-  padding:30px;
+.bg_other {
+  text-align: center;
+  padding: 30px;
   position: relative;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-@media screen and ( max-width:762px )
-{
-  .bg{
-    padding:5vw;
+@media screen and (max-width: 762px) {
+  .bg {
+    padding: 5vw;
   }
-  .bg2{
-    padding:5vw;
+  .bg2 {
+    padding: 5vw;
   }
-  .bg3{
-    padding:5vw;
+  .bg3 {
+    padding: 5vw;
   }
-  .bg_s{
-    font-size:14px;
-    padding:5vw;
+  .bg4 {
+    padding: 5vw;
+  }
+  .bg_s {
+    font-size: 14px;
+    padding: 5vw;
   }
 }
 
-.icon{
+.icon {
   position: static;
   margin: 10px;
   display: inline-block;
 }
 
-.line{
+.line {
   border-bottom: 1px solid #9e9e9e;
 }
 /****************************************
           logo_area
 *****************************************/
-.logo_area{
-  margin-top:120px;
+.logo_aiz {
+  margin-top: 120px;
   text-align: center;
 }
-
-.logo_area img{
-  margin:50px;
-  width:33%;
+.logo_aiz img {
+  margin: 50px;
+  width: 55%;
 }
-@media screen and ( max-width:762px )
-{
-  .logo_area{
-    margin-top:70px;
-    text-align: center;
+.logo_area {
+  margin-top: 120px;
+  text-align: center;
+}
+.logo_area img {
+  margin: 50px;
+  width: 33%;
+}
+@media screen and (max-width: 762px) {
+  .logo_aiz img {
+    width: 80%;
   }
 
-  .logo_area img{
-    width:80%;
+  .logo_area {
+    margin-top: 70px;
+  }
+  .logo_area img {
+    width: 80%;
   }
 }
 
 /****************************************
           img
 *****************************************/
-.photo{
+.photo {
   text-align: center;
 }
-.photo img{
-  width:100%;
+.photo img {
+  width: 100%;
 }
 
 /****************************************
@@ -208,172 +220,220 @@ position: relative;
 *****************************************/
 .svg_pic {
   margin: 0 auto;
-  width:80%;
-  height:auto;
+  width: 80%;
+  height: auto;
 }
 
-.aiz_pp{
-  display:inline-block;
+.aiz_pp {
+  display: inline-block;
   position: relative;
 
-  margin:auto;
-  width:24%;
-  height:auto;
+  margin: auto;
+  width: 24%;
+  height: auto;
 }
 
-.aiz_pp p{
-display: flex;
-text-align: center;
-flex-wrap:wrap;
+.aiz_pp p {
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
 }
 
-@media screen and ( max-width:683px ){
-  .svg_pic{
-    width:100%;
+@media screen and (max-width: 683px) {
+  .svg_pic {
+    width: 100%;
   }
-  .aiz_pp{
-    width:32%;
+  .aiz_pp {
+    width: 32%;
   }
 }
 /****************************************
           IchigoIchie
 *****************************************/
-.img_i{
+.img_i {
   text-align: center;
 }
-.img_i img{
-  width:50%;
+.img_i img {
+  width: 50%;
 }
 
-@media screen and ( max-width:762px ){
-  .img_i img{
-    width:100%;
+@media screen and (max-width: 762px) {
+  .img_i img {
+    width: 100%;
   }
 }
 /****************************************
           Shinkai2020
 *****************************************/
-.logo_s{
+.logo_s {
   position: absolute;
   top: 10%;
   left: 8%;
 
   max-width: 300px;
   width: auto;
-  height:auto;
-  min-height:200px;
+  height: auto;
+  min-height: 200px;
 }
-.button_game{
+.button_game {
   position: relative;
   text-align: center;
-  margin:100px auto 200px;
-  padding:0;
+  margin: 100px auto 200px;
+  padding: 0;
 }
-.button_game img:hover{
+.button_game img:hover {
   transform: scale(0.95);
 }
 
 /****************************************
           doosuru
 *****************************************/
-.link_to_demo{
+.triangle-bottom {
+  margin-left: 20%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 24px 14px 0 14px;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.under_white{
+  border-bottom: solid 2px rgb(255, 255, 255);
+}
+.under_pink {
+  border-bottom: solid 4px rgb(255, 103, 141);
+}
+.under_glay {
+  border-bottom: solid 4px rgb(172, 172, 172);
+}
+.tab{
+  margin-left: 50px;
+}
+
+
+ol {
+  counter-reset: number; /*数字をリセット*/
+  list-style-type: none !important; /*数字を一旦消す*/
+  margin-left: -40px;
+}
+ol li {
+  position: relative;
+  padding: 0 0 0 50px;
+}
+ol li:before {
+  /* 以下数字をつける */
+  position: absolute;
+  counter-increment: number;
+  content: counter(number);
+  /*以下数字のデザイン変える*/
+  display: inline-block;
+  background: #ff5d78;
+  color: white;
+  font-size: 15px;
+
+  border-radius: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
-  background-color:  #e9eff7;
-  padding:30px;
-  margin:2vw;
+  /*以下 上下中央寄せのため*/
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.link_to_demo {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 30px;
+  margin: 2vw;
 
   border-radius: 10px;
 
-  transition: box-shadow ,transform 0.5s;
-  box-shadow:
-  7px 7px 15px rgba(0, 60, 90, 0.3),
-  -7px -7px 15px rgb(255, 255, 255),
-  inset 7px 7px 15px transparent,
-  inset -7px -7px 15px transparent;
-  
-  font-size: 20px;
-  color:#192944; 
-}
-
-.link_to_demo:hover{
+  transition: box-shadow, transform 0.5s;
   box-shadow: 7px 7px 15px rgba(0, 60, 90, 0.3),
-              -7px -7px 15px rgb(255, 255, 255),
-              inset 7px 7px 15px rgba(0, 60, 90, 0.3),
-              inset -7px -7px 15px rgb(255, 255, 255);
-  transform: scale(0.99);
-  color:#9e9e9e;
+    -7px -7px 15px rgb(255, 255, 255), inset 7px 7px 15px transparent,
+    inset -7px -7px 15px transparent;
+
+  font-size: 20px;
+  color: #192944;
 }
 
-@media screen and ( max-width:762px )
-{
-  .link_to_demo{
-    padding:15px;
-    margin:1vw;
+.link_to_demo:hover {
+  box-shadow: 7px 7px 15px rgba(0, 60, 90, 0.3),
+    -7px -7px 15px rgb(255, 255, 255), inset 7px 7px 15px rgba(0, 60, 90, 0.3),
+    inset -7px -7px 15px rgb(255, 255, 255);
+  transform: scale(0.99);
+  color: #9e9e9e;
+}
+
+@media screen and (max-width: 762px) {
+  .link_to_demo {
+    padding: 15px;
+    margin: 1vw;
   }
 }
 
 /****************************************
           others
 *****************************************/
-.img_ow{
-  display:inline-block;
+.img_ow {
+  display: inline-block;
 
-  width:45%;
-  height:auto;
-  margin:10vh 2vw;
+  width: 45%;
+  height: auto;
+  margin: 10vh 2vw;
 }
-.img_ow img{
-  width:100%;
-  display:flex;
+.img_ow img {
+  width: 100%;
+  display: flex;
 }
 
-.img_ow p{
+.img_ow p {
   text-align: left;
   font-size: 15px;
-  color:#636363;
+  color: #636363;
 }
 
 /* ウィンドウ幅*/
-@media screen and ( max-width:762px )
-{
-  .img_ow{
-    width:100%;
-    height:auto;
-    margin:5vh 2vw;
+@media screen and (max-width: 762px) {
+  .img_ow {
+    width: 100%;
+    height: auto;
+    margin: 5vh 2vw;
   }
 }
-
 
 /****************************************
           works / icon
 *****************************************/
-.bg_works{
-  margin:0 auto;
-  padding:0;
-  width:90%;
+.bg_works {
+  margin: 0 auto;
+  padding: 0;
+  width: 90%;
 }
 
-.page_top{
-  margin:0 auto;
-  padding-top:150px;
+.page_top {
+  margin: 0 auto;
+  padding-top: 150px;
   text-align: center;
 }
 
-.thumbnail{
-  padding-bottom:200px;
+.thumbnail {
+  padding-bottom: 200px;
 }
 
-.thumbnail li{
-  display:inline-block;
-  margin:20px auto;
-  padding:0;
-  width:calc(98%/3);
+.thumbnail li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 0;
+  width: calc(98% / 3);
 }
 
 .icon_box {
   position: relative;
-  top:100px;
-  margin:0 auto;
+  top: 100px;
+  margin: 0 auto;
 
   border-radius: 20px;
   width: 25vw;
@@ -381,68 +441,70 @@ flex-wrap:wrap;
   overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
 }
 /*safari*/
-_::-webkit-full-page-media, _:future, :root .icon_box{
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box {
   border-radius: 0px;
-  }
+}
 
-.icon_box img{
+.icon_box img {
   border-radius: 20px;
-  width:25vw;
+  width: 25vw;
   height: 25vw;
-  margin:0px;
+  margin: 0px;
 
   transform: scale(1);
-  transition-property:transform;
+  transition-property: transform;
   transition-duration: 0.5s;
 }
 /*safari*/
-_::-webkit-full-page-media, _:future, :root .icon_box img{
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box img {
   border-radius: 0px;
-  }
+}
 
-.icon_box img:hover{
+.icon_box img:hover {
   transform: scale(1.08);
 }
 
 /* ウィンドウ幅が狭いとき*/
-@media screen and ( max-width:762px )
-{
-  .thumbnail{
+@media screen and (max-width: 762px) {
+  .thumbnail {
     display: flex;
     flex-direction: row;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
   }
 
-  .thumbnail li{
-    width:100%;
-    height:100%;
-    margin:20px;
+  .thumbnail li {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
   }
 
   .icon_box {
     width: 100%;
-    height:100%;
+    height: 100%;
   }
-  .icon_box img{
+  .icon_box img {
     width: 100%;
-    height:100%;
+    height: 100%;
   }
-  .icon_box img:hover{
+  .icon_box img:hover {
     transform: scale(1);
   }
-
 }
 
-.me img{
-  width:50%;
+
+.me img {
+  width: 50%;
 }
 
-.caption{
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:300;
+h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
 }
 
-h2{
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight:300;
+.h1_thin{
+  font-weight: 300;
 }
