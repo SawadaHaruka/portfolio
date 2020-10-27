@@ -34,25 +34,11 @@ nav{
   padding: 0px;
   margin-right: 20px;
 }
-.menu-item a:hover{
-  color:rgb(255, 0, 61);
-  transition: 0.25s ;
-}
 
-.underline{
-  background: linear-gradient(to right, #ff003d, #ff003d);
-	background-repeat: no-repeat;
-	background-size: 0% 8%;
-  background-position: bottom;
-	transition: all 0.25s ease-in;
-}
-.underline:hover{
-	background-size: 100% 8%;
-}
  
 .menu{
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 250px;
   text-align:center;
   background-color:#92eadf;
   transition: 0.5s ease-out;/*滑らかに表示*/
@@ -139,6 +125,20 @@ nav{
 .menu-item {
   font-size: 25px;
   margin-right: 20px;
+}
+.menu-item a:hover{
+  color:rgb(255, 0, 61);
+  transition: 0.25s ;
+}
+.underline{
+  background: linear-gradient(to right, #ff003d, #ff003d);
+	background-repeat: no-repeat;
+	background-size: 0% 8%;
+  background-position: bottom;
+	transition: all 0.25s ease-in;
+}
+.underline:hover{
+	background-size: 100% 8%;
 }
 
 .menu ul{
