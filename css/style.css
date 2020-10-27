@@ -6,10 +6,8 @@ body {
   font-family: "Libre Franklin", sans-serif, "Noto Sans JP", sans-serif;
   font-weight: 300;
   font-size: 1.1em;
+  line-height: 2;
 }
-/* body::-webkit-scrollbar {
-  display:none;
-} */
 
 a {
   text-decoration: none;
@@ -85,8 +83,6 @@ img {
 }
 
 .bg {
-  line-height: 2;
-
   margin: 0 auto;
   padding: 0 18vw 120px;
   position: relative;
@@ -94,8 +90,6 @@ img {
 
 .bg2 {
   color: #ffffff;
-  line-height: 2.2;
-
   margin: 0 auto;
   padding: 60px 18vw;
   background-color: #042d75;
@@ -104,7 +98,7 @@ img {
 
 .bg3 {
   color: #ffffff;
-  line-height: 2;
+
   margin: 0;
   padding: 60px 18vw;
   background-color: #313949;
@@ -113,7 +107,6 @@ img {
 
 .bg4 {
   color: #ffffff;
-  line-height: 2;
   margin: 0;
   padding: 70px 18vw;
   background-color: #476194;
@@ -127,7 +120,6 @@ img {
 .bg_s {
   position: relative;
   color: #ffffff;
-  line-height: 2;
   margin: 0;
   padding: 0 20vw 120px;
 }
@@ -140,6 +132,10 @@ img {
 }
 
 @media screen and (max-width: 762px) {
+  body{
+    line-height: 1.8;
+    font-size: 1em;
+  }
   .bg {
     padding: 5vw;
   }
@@ -153,7 +149,6 @@ img {
     padding: 5vw;
   }
   .bg_s {
-    font-size: 14px;
     padding: 5vw;
   }
 }
@@ -192,6 +187,7 @@ img {
     width: 80%;
   }
   .logo_area {
+    width: calc(100vw - 15px);
     margin-top: 70px;
   }
   .logo_area img {
@@ -235,7 +231,8 @@ img {
 
 @media screen and (max-width: 683px) {
   .svg_pic {
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100vw - 15px);
   }
   .aiz_pp {
     width: 32%;
@@ -269,8 +266,9 @@ img {
   z-index: 3;
   position: relative;
   text-align: center;
-  margin: 100px auto 200px;
+  margin: 100px 0 200px;
   padding: 0;
+  /* width: calc(100vw - 15px); */
 }
 .button_game img:hover {
   transform: scale(0.95);
@@ -363,6 +361,10 @@ ol li:before {
 }
 
 @media screen and (max-width: 762px) {
+  .tab{
+    margin-left: 20px;
+  }
+
   .link_to_demo {
     padding: 15px;
     margin: 1vw;
