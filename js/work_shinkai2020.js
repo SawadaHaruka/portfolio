@@ -1,7 +1,6 @@
 export class Shinkai {
   constructor() {
     this.initCjs();
-
     this.set();
   }
   
@@ -105,4 +104,4 @@ export class Shinkai {
 
 }
 
-let game = new Shinkai();
+let shinkai = new Shinkai();

@@ -121,6 +121,7 @@ img {
 }
 
 .bg_s_color {
+  z-index: 1;
   background: linear-gradient(#b2f0ff, #4faceb, #07346b, #000e1f);
 }
 .bg_s {
@@ -129,13 +130,6 @@ img {
   line-height: 2;
   margin: 0;
   padding: 0 20vw 120px;
-}
-
-.cjsCanvas {
-  position: absolute;
-  margin: 0;
-  top: 50px;
-  padding: 0;
 }
 
 .bg_other {
@@ -185,6 +179,7 @@ img {
   width: 55%;
 }
 .logo_area {
+  z-index: 3;
   margin-top: 120px;
   text-align: center;
 }
@@ -265,17 +260,14 @@ img {
 /****************************************
           Shinkai2020
 *****************************************/
-.logo_s {
+.cjsCanvas {
   position: absolute;
-  top: 10%;
-  left: 8%;
-
-  max-width: 300px;
-  width: auto;
-  height: auto;
-  min-height: 200px;
+  top: 50px;
+  margin: 0;
+  padding: 0;
 }
 .button_game {
+  z-index: 3;
   position: relative;
   text-align: center;
   margin: 100px auto 200px;
@@ -283,6 +275,11 @@ img {
 }
 .button_game img:hover {
   transform: scale(0.95);
+}
+@media screen and (max-width: 762px) {
+  .button_game img {
+    max-width: 50%;;
+  }
 }
 
 /****************************************
