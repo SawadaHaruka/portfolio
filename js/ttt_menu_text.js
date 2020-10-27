@@ -23,8 +23,8 @@ export class Txanime {
 //マウスイベント
   mouse_evt(target){
     target.addEventListener("mousedown", (evt) => {
-      window.scroll({
-        top:0,
+      window.scrollTo({
+        top,
         behavior:"smooth"
       });
     }, false);
