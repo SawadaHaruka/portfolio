@@ -262,6 +262,11 @@ img {
   margin: 0;
   padding: 0;
 }
+
+.shinkai_gif{
+  display: inline-block;
+  margin: 0 -50px;
+}
 .button_game {
   z-index: 3;
   position: relative;
@@ -276,6 +281,9 @@ img {
 @media screen and (max-width: 762px) {
   .button_game img {
     max-width: 50%;;
+  }
+  .shinkai_gif{
+    margin: 0 -70px;
   }
 }
 
