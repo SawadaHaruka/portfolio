@@ -273,7 +273,6 @@ img {
   text-align: center;
   margin: 100px 0 200px;
   padding: 0;
-  /* width: calc(100vw - 15px); */
 }
 .button_game img:hover {
   transform: scale(0.95);
