@@ -1,12 +1,15 @@
 export class Txanime {
   constructor() {
-    this.ttt=document.getElementById('ttt');
-    this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
-    this.scroll();
-    
-    this.menu();
+    window.onload = ()=> {
+      this.ttt=document.getElementById('ttt');
+      this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
+      this.scroll();
+      
+      this.menu();
+  
+      this.text();
+    }
 
-    this.text();
   }
   scroll(){
     window.addEventListener('scroll', ()=> {
