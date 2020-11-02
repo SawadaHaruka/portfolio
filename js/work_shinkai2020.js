@@ -1,7 +1,9 @@
 export class Shinkai {
   constructor() {
-    this.initCjs();
-    this.set();
+    window.onload = ()=> {
+      this.initCjs();
+      this.set();
+    }
   }
   
   // * createJS を初期化

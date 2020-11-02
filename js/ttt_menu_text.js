@@ -3,7 +3,7 @@ export class Txanime {
     window.onload = ()=> {
       this.ttt=document.getElementById('ttt');
       this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
-      this.scroll();
+      this.ttt_scroll();
       
       this.menu();
   
@@ -11,7 +11,7 @@ export class Txanime {
     }
 
   }
-  scroll(){
+  ttt_scroll(){
     window.addEventListener('scroll', ()=> {
       let y = window.pageYOffset;
       if(y<=80){
