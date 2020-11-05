@@ -19,6 +19,7 @@ export class Shinkai {
     // タッチ操作をサポートしているブラウザーかチェック
     if (createjs.Touch.isSupported()) {
       createjs.Touch.enable(this.stage);
+      console.log("touch is supported");
     }
 
     // Ticker を設定
@@ -35,7 +36,6 @@ export class Shinkai {
    *
    */
   onResize(evt = null) {
-    // console.log(window.innerWidth, window.innerHeight);
     let canvas = document.getElementById("cjsCanvas");
     // 画面幅・高さを取得=>Canvas要素の大きさを画面幅・高さに合わせる
     canvas.width = window.innerWidth;
@@ -101,7 +101,6 @@ export class Shinkai {
       // console.log("no update");
     }
   }
-
 
 
 }

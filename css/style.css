@@ -231,8 +231,8 @@ img {
 
 @media screen and (max-width: 683px) {
   .svg_pic {
-    /* width: 100%; */
-    width: calc(100vw - 15px);
+    width: 100%;
+    /* width: calc(100vw - 15px); */
   }
   .aiz_pp {
     width: 32%;
