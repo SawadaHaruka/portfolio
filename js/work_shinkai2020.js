@@ -1,9 +1,7 @@
 export class Shinkai {
   constructor() {
-    window.onload = ()=> {
       this.initCjs();
       this.set();
-    }
   }
   
   // * createJS を初期化
@@ -37,6 +35,7 @@ export class Shinkai {
    */
   onResize(evt = null) {
     let canvas = document.getElementById("cjsCanvas");
+    console.log(window.innerWidth);
     // 画面幅・高さを取得=>Canvas要素の大きさを画面幅・高さに合わせる
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
