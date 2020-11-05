@@ -1,7 +1,7 @@
 export class Shinkai {
   constructor() {
-      this.initCjs();
-      this.set();
+    window.addEventListener("load", this.initCjs());
+    this.set();
   }
   
   // * createJS を初期化
@@ -14,10 +14,10 @@ export class Shinkai {
     });
     this.onResize();
 
-    // タッチ操作をサポートしているブラウザーかチェック
-    if (createjs.Touch.isSupported()) {
-      createjs.Touch.enable(this.stage);
-      console.log("touch is supported");
+    this.stage.enableMouseOver();
+    if(createjs.Touch.isSupported() == true){
+      // タッチ操作を有効にします。
+      createjs.Touch.enable(this.stage)
     }
 
     // Ticker を設定
@@ -35,13 +35,15 @@ export class Shinkai {
    */
   onResize(evt = null) {
     let canvas = document.getElementById("cjsCanvas");
-    console.log(window.innerWidth);
+    // console.log(window.innerWidth);
     // 画面幅・高さを取得=>Canvas要素の大きさを画面幅・高さに合わせる
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    this.stage.canvas.width = window.innerWidth;
+    this.stage.canvas.height = window.innerHeight;
 
     this.cv_w = canvas.width;
     this.cv_h = canvas.height;
+
+    this.stage.update();
   } 
 
   set(){
