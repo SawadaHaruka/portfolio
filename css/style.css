@@ -266,20 +266,18 @@ img {
   margin: 0;
   padding: 0;
   width: 100vw;
-
-  overflow: scroll; /* ここのscrollが効かない */
   height: 100vh; /* これを追加 */
+  overflow: scroll; /* ここのscrollが効かない */
 }
 
-#transparent::before{
-  /* position: absolute; */
+#transparent{
+  position: relative;
   top: 50px;
   margin: 0;
   padding: 0;
-  width: 100%;
-}
-#transparent{
-  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: scroll;
 }
 
 .button_game {
