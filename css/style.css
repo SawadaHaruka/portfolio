@@ -267,13 +267,16 @@ img {
   width: 100%;
 }
 
-#transparent{
+#transparent::before{
   z-index: 2;
   position: absolute;
   top: 50px;
   margin: 0;
   padding: 0;
   width: 100%;
+}
+#transparent{
+  position: relative;
 }
 
 .button_game {
