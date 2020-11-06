@@ -168,8 +168,9 @@ img {
           logo_area
 *****************************************/
 .logo_aiz {
-  margin-top: 120px;
+  position: relative;
   text-align: center;
+  margin-top: 120px;
 }
 .logo_aiz img {
   margin: 50px;
@@ -177,8 +178,9 @@ img {
 }
 .logo_area {
   z-index: 3;
-  margin-top: 120px;
+  position: relative;
   text-align: center;
+  margin-top: 120px;
 }
 .logo_area img {
   margin: 50px;
@@ -263,14 +265,14 @@ img {
   top: 50px;
   margin: 0;
   padding: 0;
-  width: 100%;
-  
+  width: 100vw;
+
   overflow: scroll; /* ここのscrollが効かない */
   height: 100vh; /* これを追加 */
 }
 
 #transparent::before{
-  position: absolute;
+  /* position: absolute; */
   top: 50px;
   margin: 0;
   padding: 0;
