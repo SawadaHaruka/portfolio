@@ -259,11 +259,23 @@ img {
           Shinkai2020
 *****************************************/
 .cjsCanvas {
+  z-index: 1;
   position: absolute;
   top: 50px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
+
+#transparent{
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
 .button_game {
   z-index: 3;
   position: relative;

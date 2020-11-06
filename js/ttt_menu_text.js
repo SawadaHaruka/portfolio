@@ -1,16 +1,8 @@
 export class Txanime {
   constructor() {
-    window.onload = ()=> {
-      this.ttt=document.getElementById('ttt');
-      this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
-      this.ttt_scroll();
-      
-      this.menu();
-  
-      this.text();
-    }
-
+    window.addEventListener("load", this.init());
   }
+
   ttt_scroll(){
     window.addEventListener('scroll', ()=> {
       let y = window.pageYOffset;
@@ -62,6 +54,14 @@ export class Txanime {
       interval: 150
     };
     ScrollReveal().reveal('.icon', icon);
+  }
+
+  init(){
+    this.ttt=document.getElementById('ttt');
+    this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
+    this.ttt_scroll();
+    this.menu();
+    this.text();
   }
 
 }
