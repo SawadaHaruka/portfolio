@@ -259,7 +259,7 @@ img {
 
 /* 透明な箱 */
 #transparent{
-  z-index: 4;
+  z-index: 2;
   position: absolute;
   top: 50px;
   margin: 0;
@@ -270,6 +270,7 @@ img {
 }
 
 .button_game {
+  z-index: 3;
   position: relative;
   text-align: center;
   margin: 100px 0 200px;
