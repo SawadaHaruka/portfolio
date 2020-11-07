@@ -65,7 +65,7 @@ export class Shinkai {
  
         this.stage.addChild(bubble);
         bubbles.push(bubble);
-        createjs.Tween.get(bubble).to({ alpha: Math.random()-0.2}, Math.min(800, Math.random()*1200));
+        createjs.Tween.get(bubble).to({ alpha: Math.random()-0.1}, Math.min(800, Math.random()*1200));
 
         }
     }
