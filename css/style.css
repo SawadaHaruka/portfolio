@@ -325,11 +325,11 @@ ol li {
   padding: 0 0 0 50px;
 }
 ol li:before {
-  /* 以下数字をつける */
+  /* 数字をつける */
   position: absolute;
   counter-increment: number;
   content: counter(number);
-  /*以下数字のデザイン変える*/
+  /*数字のデザイン変える*/
   display: inline-block;
   background: #ff5d78;
   color: white;
@@ -341,7 +341,7 @@ ol li:before {
   height: 40px;
   line-height: 40px;
   text-align: center;
-  /*以下 上下中央寄せのため*/
+  /*上下中央寄せ*/
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
