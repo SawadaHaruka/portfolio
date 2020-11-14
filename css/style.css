@@ -103,7 +103,7 @@ img {
 
   margin: 0;
   padding: 60px 18vw;
-  background-color: #313949;
+  background-color: #566277;
   position: relative;
 }
 
@@ -111,7 +111,7 @@ img {
   color: #ffffff;
   margin: 0;
   padding: 70px 18vw;
-  background-color: #476194;
+  background-color: #768cb8;
   position: relative;
 }
 
@@ -397,14 +397,15 @@ ol li:before {
   position: relative;
   left:5vw;
   width:20%;
-  margin:100px 0;
+  margin:5vh 0;
 }
 .point img{
   width:80%;
 }
+
 @media screen and (max-width: 762px) {
   .bg_chat{
-    padding:50px 0 100px;
+    padding:1px 0 100px;
   }
   .point{
     left:2vw;
