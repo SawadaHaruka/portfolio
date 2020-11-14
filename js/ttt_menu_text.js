@@ -45,6 +45,16 @@ export class Txanime {
     };
     ScrollReveal().reveal('.work', text);
 
+    let fbts = {
+      delay: 100,
+      duration: 1000,
+      distance: '30px',
+      origin: 'bottom',
+      scale: 1.1,
+      interval: 150
+    };
+    ScrollReveal().reveal('.fbts', fbts);
+
     let icon = {
       delay: 100,
       duration: 1000,
