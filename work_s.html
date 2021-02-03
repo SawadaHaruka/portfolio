@@ -13,6 +13,7 @@
   <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
   <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
+  <script src="./rellax.min.js"></script>
 
 <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap" rel="stylesheet">
 
@@ -53,50 +54,84 @@
       </div>
 
       <div class="bg_s">
-        <h1 class="h1_thin work">しんかい2020 / DEEP SEA EXPLORATION 2020</h1>
-        <p class="line work"></p>
-        <p class="work">ゲーム / UI デザイン</p>
-        <h3 class="work">課題設定</h3>
-        <p class="work">「得点の概念を入れたゲームを作ろう」</p>
-        <h3 class="work">制作期間</h3>
-        <p class="work">１ヶ月（授業課題）/ 2020</p>
-        <h3 class="work">使用したソフトウェア</h3>
-        <p class="work">Visual Studio Code (JavaScript) / Illustrator / animateCC</p>
+        <h1 class="h1_thin">しんかい2020 / DEEP SEA EXPLORATION 2020</h1>
+        <p class="line_w"></p>
+        ゲーム / UI デザイン
+        <h3>課題設定</h3>
+        「得点の概念を入れたゲームを作ろう」
+        <h3>制作期間</h3>
+        １ヶ月（授業課題）/ 2020
+        <h3>使用したソフトウェア</h3>
+        Visual Studio Code (JavaScript) / Illustrator / animateCC
         <ul class="icon-group">
           <li class="icon"><img src="img/vscode_icon.png" alt="Visual Studio Codeアイコン"srcset="img/vscode_icon.svg"width="55" height="55"></li>
           <li class="icon"><img src="img/ai_icon.png" alt="Aiアイコン" srcset="img/ai_icon.svg" width="55" height="55"></li>
         </ul>
         <br><br>
-        <p class="line work"></p>
+        <p class="line_w"></p>
         <br>
-        <h1 class="work">作品説明</h1>
-        <h3 class="work">ゲームのデザイン</h3>
-        <p class="work">しんかい2020は授業の課題で作った、制限時間30秒で手軽に遊べるスマートフォン用のゲームです。<br>深海生物が大好きだったので、「しんかい2020」という深海2000メートル辺りを潜る、架空の深海探査艇を操作して、深海生物を採取するというゲームを作りました。</p>
-        <p class="work">真っ暗闇の深海に潜んでいる深海生物に、タップして動かした深海探査艇のライトが当たると深海生物が照らされて浮かび上がります。現れた深海生物をさらにタップすると、深海生物を採取することができます。</p>
-        <p class="work">指一本で遊べる手軽さも考えてゲームのデザインを行いました。</P>
-        <br>
-        <h3 class="work">自然に見せる工夫</h3>
-        <p class="work">遊んでみて快適に感じるように細かな工夫をたくさん施しました。</p>
-        <ul class="work">
-          <li>トップページとプレイ方法の説明ページのアニメーション</li>
-          <li >深海生物のアニメーション</li>
-        <div class="shinkai_gif work"><img src="img/shinkai/tengan.gif"></div>
-        <div class="shinkai_gif work"><img src="img/shinkai/mendako.gif"></div>
-        <div class="shinkai_gif work"><img src="img/shinkai/sakeb.gif"></div>
-          <li>制限時間が残り５秒になったら数字が赤くなる</li>
-          <li>深海生物が画面の端に当たったら進行方向と向きが変わる</li>
-          <li>採取したときのサウンド</li>
-          <li>タップしたところまで近づく深海探査艇の向きがチラチラと変わらないように判定</li>
-          <li>ゲーム中とゲーム終了後のリザルト画面のBGMが変わる(深海から浅海へ)</li>
-          <li>深海生物の個体数により点数を変える</li>
-          <li>採取したらその分新しく生成され常に画面に一定数いるテンガンムネエソ </li>
-          <div class="shinkai_gif work"><img src="img/shinkai/tengan.gif"></div>
-          <div class="shinkai_gif work"><img src="img/shinkai/tengan.gif"></div>
-          <div class="shinkai_gif work"><img src="img/shinkai/tengan.gif"></div>
-        </ul>
-        <br>
-        <p class="work">ほとんどプログラミングのことがわからなかった中、授業ではcanvasタグ内に描画されるJavaScriptに取り組みました。<br><br>そして後々、なんとなくプログラミングのことがわかってきたので、改めてこのサイトに載せられる形にCSSを調整してホスティングを行いました。</p>
-        <p class="work">上のスタートボタンから飛べますのでぜひ遊んでみてください。もちろんパソコンでもお試しいただけます！</p>
+        <div>
+        <h1>作品説明</h1>
+        しんかい2020は、制限時間30秒で手軽に遊べるスマートフォン用のゲームです。深海生物が大好きだったので、「しんかい2020」という深海2000メートル辺りを潜る、架空の深海探査艇を操作して、深海生物を採取するというゲームを作りました。指一本で遊べる手軽さも考えてゲームのデザインを行いました。<br>ほとんどプログラミングのことがわからなかった中、授業ではcanvasタグ内に描画されるJavaScriptに取り組みました。ライブラリにCreateJSを使用しています。
+        </div>
+      <br><br>
+
+      <div class="shinkai_ui_L">
+        <div>
+        <h1>わくわくスタート画面</h1>
+        トップページにはモーションを加え、深海生物がフワッと登場します。ヘンテコでかわいい深海生物の魅力をギュッと詰め込みました。TOUCH SCREENで画面遷移します。
+        </div>
+        <img class="pict sp_img"src="img/shinkai/sk_top.png">
+      </div>
+      <br><br><br>
+
+      <div class="shinkai_ui_R">
+        <img class="pict_r sp_img" src="img/shinkai/sk_howto.png">
+        <div>
+        <h1>How to play</h1>
+          真っ暗闇の深海に潜んでいる深海生物に、タップして動かした深海探査艇のライトが当たると深海生物が照らされて浮かび上がります。現れた深海生物をさらにタップすると、深海生物を採取することができます。<br>
+        </div>
+      </div>
+      <br><br><br>
+      <div class="shinkai_ui_L">
+        <div>
+          <h1>30秒でどれだけ捕獲できるか!?</h1>
+          遊んでみて快適に感じるように、細かいところまで工夫しています。<br>
+          <ul>
+            <li>制限時間が残り５秒になったら数字が赤くなる</li>
+            <li>深海生物が画面の端に当たったら進行方向と向きが変わる</li>
+            <li>採取したときのサウンド</li>
+            <li>タップしたところまで近づく深海探査艇の向きがチラチラと変わらないように判定</li>
+            <li>深海生物の個体数により点数を変える</li>
+            <li>採取したらその分新しく生成され常に画面に一定数いるテンガンムネエソ </li>
+            <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+            <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+            <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+          </ul>
+          </div>
+        <img class="pict sp_img" src="img/shinkai/sk_game.png">
+      </div>
+      <br><br><br>
+      <div class="shinkai_ui_R">
+        <img class="pict_r sp_img" src="img/shinkai/sk_result.png">
+        <div>
+          <h1>捕まえた結果</h1>
+          制限時間終了後は深海から浅海へ浮上します。捕獲した深海生物を眺めて楽しみましょう。<br>
+          <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+          <img class="shinkai_gif"src="img/shinkai/mendako.gif">
+          <img class="shinkai_gif"src="img/shinkai/sakeb.gif"><br><br>
+          中にはタップし続けるとなぜか早く泳ぎ出してしまうおさかなもいます。<br>
+          <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+          <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+          <img class="shinkai_gif"src="img/shinkai/tengan.gif">
+        </div>
+      </div>
+      <br><br><br>
+        授業期間後、プログラミングのことをさらに理解できるようになってから、改めてこのサイトに載せられる形にCSSを調整してホスティングを行いました。上のスタートボタンから飛べますのでぜひ遊んでみてください。もちろんパソコンでもお試しいただけます。
+      <br><br><br>
+      <img class="shinkai_move sk1" data-rellax-speed="-2.5" data-rellax-zindex="1" src="img/shinkai/omu_op.png">
+      <img class="shinkai_move sk2" data-rellax-speed="-3" src="img/shinkai/mendako_op.png">
+      <img class="shinkai_move sk3" data-rellax-speed="-2.8" src="img/shinkai/sake_op.png">
       </div>
     </div>
   </div>

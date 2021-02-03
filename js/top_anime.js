@@ -7,7 +7,7 @@ export class Top {
     this.two = new Two({
       width: window.innerWidth, height: window.innerHeight,
       autostart: true
-    }).appendTo(document.getElementById("svgStage"));
+    }).appendTo(document.getElementById("svgStage2"));
 
     this.s_w = this.two.width;
     this.s_h = this.two.height;
@@ -45,10 +45,7 @@ export class Top {
   }
 
   elements() {
-    let frame = this.two.makeRectangle(this.s_w / 2, this.s_h / 2, this.s_w, this.s_h);
-    frame.noFill().stroke = this.gladation_color();
-    frame.linewidth = 150;
-
+    
     let tri = this.two.makePolygon(this.s_w / 4, this.s_h * 2 / 3, 120, 3);
     tri.noStroke().fill = this.gladation_color();
 
@@ -111,8 +108,6 @@ export class Top {
     this.animation();
     this.move();
 
-    let shape = this.two.interpret(document.getElementById('SawadaHaruka')).center();
-    shape.translation.set(this.s_w / 2, this.s_h / 2);
     /*
     *
     ウィンドウのリサイズによって変える
@@ -125,15 +120,8 @@ export class Top {
       this.group.translation.set(this.s_w * 3 / 4, this.s_h / 3);
       this.group2.translation.set(this.s_w * 4 / 5, this.s_h * 2 / 5);
 
-      frame.translation.set(this.s_w / 2, this.s_h / 2);
-      frame.width = this.s_w;
-      frame.height = this.s_h;
-
       tri.translation.set(this.s_w / 4, this.s_h * 2 / 3);
 
-      shape.translation.set(this.s_w / 2, this.s_h / 2);
-      shape.width = this.s_w;
-      shape.height = this.s_h;
     }, false);
   }
 

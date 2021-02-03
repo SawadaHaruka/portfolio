@@ -64,6 +64,18 @@ export class Txanime {
       interval: 150
     };
     ScrollReveal().reveal('.icon', icon);
+
+    let sp_img = {
+      duration: 1000,
+      distance: '80px',
+      origin: 'bottom',
+      reset: true,
+      opacity:1,
+      easing: 'ease' 
+    };
+    ScrollReveal().reveal('.sp_img', sp_img);
+
+    let rellax = new Rellax('.shinkai_move');
   }
 
   init(){
