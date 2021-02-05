@@ -2,6 +2,7 @@ export class Shinkai {
   constructor() {
     window.addEventListener("load", this.initCjs());
     this.set();
+    let rellax = new Rellax('.shinkai_move');
   }
   
   // * createJS を初期化

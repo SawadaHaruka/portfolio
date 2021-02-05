@@ -74,8 +74,6 @@ export class Txanime {
       easing: 'ease' 
     };
     ScrollReveal().reveal('.sp_img', sp_img);
-
-    let rellax = new Rellax('.shinkai_move');
   }
 
   init(){
