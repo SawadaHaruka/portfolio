@@ -1,6 +1,7 @@
  /*ロゴの大きさを調整*/
 #logo img {
-  max-width:60%;
+  margin-top: 7px;
+  max-width:80%;
 }
  
 nav{
@@ -103,7 +104,10 @@ nav{
 @media screen and (min-width: 762px) {
  
 /*ロゴの大きさを調整*/
-#logo img{max-width:250px;}	
+#logo img {
+  margin-top: 10px;
+  max-width: 250px;
+}
 	
 nav{
  display: flex;
@@ -127,7 +131,7 @@ nav{
 }
 .menu-item a:hover{
   color:rgb(255, 0, 61);
-  transition: 0.25s ;
+  transition: 0.25s;
 }
 .underline{
   background: linear-gradient(to right, #ff003d, #ff003d);

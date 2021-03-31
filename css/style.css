@@ -196,6 +196,18 @@ img {
 .line_w {
   border-bottom: 1px solid #fff;
 }
+
+
+.back {
+  margin: 17vw 0 8vw;
+}
+.back a{
+  color:#ff5d78;
+}
+.back a:hover{
+  color:#5dc4ff;
+}
+
 /****************************************
           logo_area
 *****************************************/

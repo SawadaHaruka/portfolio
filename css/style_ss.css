@@ -102,7 +102,8 @@ img {
 *****************************************/
 /*ロゴの大きさを調整*/
 #logo img {
-  max-width: 50%;
+  margin-top: 7px;
+  max-width:80%;
 }
 
 .header {
@@ -224,10 +225,11 @@ nav {
   transform: rotate(45deg);
 }
 
-/*----------------------------------ここからPCモニターの記述-----------*/
+/*--------------------ここからPCモニターの記述---------------*/
 @media screen and (min-width: 762px) {
   /*ロゴの大きさを調整*/
   #logo img {
+    margin-top: 10px;
     max-width: 250px;
   }
 
