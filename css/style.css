@@ -64,6 +64,61 @@ img {
   opacity: 0.5;
 }
 /****************************************
+          スクロールを促す
+*****************************************/
+/*スクロールダウン全体の場所*/
+.scrolldown{
+z-index: 5;
+position:absolute;
+left:50%;
+bottom:1%;
+  /*全体の高さ*/
+height:50px;
+}
+/*Scrollテキストの描写*/
+.scrolldown span{
+  /*描画位置*/
+position: absolute;
+left:-15px;
+top: -15px;
+  /*テキストの形状*/
+color: rgb(255, 255, 255);
+font-size: 0.7rem;
+letter-spacing: 0.05em;
+}
+/* 線の描写 */
+.scrolldown::after{
+  content: "";
+    /*描画位置*/
+  position: absolute;
+  top: 0;
+    /*線の形状*/
+  width: 1px;
+  height: 30px;
+  background: rgb(255, 255, 255);
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+  animation: pathmove 1.4s ease-in-out infinite;
+  opacity:0;
+}
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove{
+  0%{
+    height:0;
+    top:0;
+    opacity: 0;
+  }
+  30%{
+    height:30px;
+    opacity: 1;
+  }
+  100%{
+    height:0;
+    top:50px;
+    opacity: 0;
+  }
+}
+
+/****************************************
           contents
 *****************************************/
 .content {
@@ -158,7 +213,7 @@ img {
 
 .bg_s_color {
   z-index: 1;
-  background: linear-gradient(#71d6f0, #4faceb, #07346b, #000e1f);
+  background: linear-gradient(#6ad9f5, #4faceb, #07346b, #000e1f);
 }
 .bg_s {
   position: relative;
@@ -353,6 +408,7 @@ img {
   z-index: 5;
 }
 .shinkai_move{
+  z-index: 0;
   opacity: 0.5;
 }
 

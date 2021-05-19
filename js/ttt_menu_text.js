@@ -69,7 +69,6 @@ export class Txanime {
       duration: 1000,
       distance: '80px',
       origin: 'bottom',
-      reset: true,
       opacity:1,
       easing: 'ease' 
     };
