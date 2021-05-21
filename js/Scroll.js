@@ -1,4 +1,4 @@
-export class Scroll {
+class Scroll {
   constructor() {
     this.hd=document.getElementById('header');
     this.scroll();
@@ -18,4 +18,4 @@ export class Scroll {
 
 
 }
-let scroll = new Scroll();
+const scroll = new Scroll();

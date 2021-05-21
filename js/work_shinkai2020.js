@@ -1,4 +1,4 @@
-export class Shinkai {
+class Shinkai {
   constructor() {
     window.addEventListener("load", this.initCjs());
     this.set();

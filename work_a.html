@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="css/style_menu.css">
 
   <script src="https://unpkg.com/scrollreveal"></script>
-
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap"
     rel="stylesheet">
@@ -42,7 +42,8 @@
   <div class="content">
     <br>
     <div class="logo_aiz">
-      <img src="img/aizuchable/aiz_logo.png" alt="Aizuchable" srcset="img/aizuchable/aiz_logo.svg" width="auto" height="auto">
+      <img src="img/aizuchable/aiz_logo.png" alt="Aizuchable" srcset="img/aizuchable/aiz_logo.svg" width="auto"
+        height="auto">
     </div>
     <div class="bg">
       <br>
@@ -59,9 +60,10 @@
         Pro
       </p>
       <ul class="icon-group">
-        <li class="icon"><img src="img/vscode_icon.png" alt="Visual Studio Codeアイコン" srcset="img/vscode_icon.svg" width="55"
-            height="55"></li>
-        <li class="icon"><img src="img/arduino_icon.png" alt="Arduinoアイコン" srcset="img/arduino_icon.svg" width="55" height="55">
+        <li class="icon"><img src="img/vscode_icon.png" alt="Visual Studio Codeアイコン" srcset="img/vscode_icon.svg"
+            width="55" height="55"></li>
+        <li class="icon"><img src="img/arduino_icon.png" alt="Arduinoアイコン" srcset="img/arduino_icon.svg" width="55"
+            height="55">
         </li>
         <li class="icon"><img src="img/ps_icon.png" alt="Psアイコン" srcset="img/ps_icon.svg" width="55" height="55"></li>
         <li class="icon"><img src="img/ai_icon.png" alt="Aiアイコン" srcset="img/ai_icon.svg" width="55" height="55"></li>
@@ -75,8 +77,8 @@
       <p class="line work"></p>
       <p class="work">チャットなどのオンライン上のコミュニケーションでは、相槌は伝りません。<br>
         相槌を打つ側は普段、顔や動作に自然とでているものが文字にして打たなければ伝わらないという手間がかかり、話し手側は自分の話がきちんと伝わっているのか不安になります。</p>
-        <br>
-      <div class="work"><img src="img/aizuchable/aiz_disable.png" alt="Aizuchable"  width="100%" height="auto"></div>
+      <br>
+      <div class="work"><img src="img/aizuchable/aiz_disable.png" alt="Aizuchable" width="100%" height="auto"></div>
     </div>
 
     <div class="bg">
@@ -93,8 +95,8 @@
       <p class="line work"></p>
       <h3 class="work">相槌の種類</h3>
       <p class="work">まず、相槌は大きく分けて以下の４種類が重要になると考えました。①から④までの４種類の相槌は頻繁に行われるものだと考えられるので、感覚的にわかりやすい、単純な振動の種類にしました。<br>
-      例えば①の軽いうなずきは、振動も小さめに一回ブルンと震え、④の笑ったときは笑っている間だけ小さく揺れが続きます。<br>
-      また、特に話に対して③の疑問を持たれたときは、話を進めていく際に最も重要なので最優先にし、大きく少し不快感のある振動を伝えます。</p>
+        例えば①の軽いうなずきは、振動も小さめに一回ブルンと震え、④の笑ったときは笑っている間だけ小さく揺れが続きます。<br>
+        また、特に話に対して③の疑問を持たれたときは、話を進めていく際に最も重要なので最優先にし、大きく少し不快感のある振動を伝えます。</p>
       <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_nod.png" alt="Aizuchable"
           srcset="img/aizuchable/aiz_pp_nod.svg" width="auto" height="auto">
         <p>① 軽いうなずき</p>
@@ -132,25 +134,37 @@
         まず、顔認識のJavaScriptのライブラリを使い、うなずく動作や首を傾げた時、笑った表情や、話が難しくて顔をしかめた時など、合計７種類の相槌を検出するプログラムを書きました。<br><br>これはコードの一部です。
       </p>
       <div class="photo work"><img src="img/aizuchable/aiz_code.png"></div>
-      <p class="work">首を傾けたときに生じる鼻根の角度ののずれや、顔をしかめた時の目と眉毛の間の距離、眠くて欠伸をした時に何秒間大きく口が開いたかなどを判断基準とし、細かく正確に相槌を分ける基準を作りました。<br><br>
-      また、相槌を打つ側のパソコンやスマートフォンのインカメラから相槌が処理され種類が判別されると、数字のみがサーバーに送信されるので、サーバーへの負荷は少なくてすみます。<br><br>
-      顔を検出した時はこのような様子になります。</p>
+      <p class="work">
+        首を傾けたときに生じる鼻根の角度ののずれや、顔をしかめた時の目と眉毛の間の距離、眠くて欠伸をした時に何秒間大きく口が開いたかなどを判断基準とし、細かく正確に相槌を分ける基準を作りました。<br><br>
+        また、相槌を打つ側のパソコンやスマートフォンのインカメラから相槌が処理され種類が判別されると、数字のみがサーバーに送信されるので、サーバーへの負荷は少なくてすみます。<br><br>
+        顔を検出した時はこのような様子になります。</p>
       <div class="photo work"><img src="img/aizuchable/aiz_rec.gif"></div>
       <p class="work">笑った時に赤丸の中の数字が①から④になり、笑顔が検出されたことがわかります。<br>
-      （実際のサービス利用時には、この画面は邪魔になってしまうのでプログラム動作の確認用です。）</p>
+        （実際のサービス利用時には、この画面は邪魔になってしまうのでプログラム動作の確認用です。）</p>
       <br>
       <p class="line work"></p>
       <br>
-      <p class="work">そして検出した結果はNode.jsを使って、話し手側のパソコンへ送られます。<br>（顔認識をスマートフォンで試そうとしましたが、セキュリティが厳しく今回は二つのデバイスを使ってのモックはできず、一台のパソコンで全て試しました。）</p>
-      <p class="work">話し手側のパソコンで検出結果をサーバーから受信し、Arduinoを用いて振動にして伝えました。目障り、耳障りにならない触覚的なアプローチ、つまり振動にすることで、画面を見て話をしながら自然と相槌の振動を受けとることができます。</p>
+      <p class="work">
+        そして検出した結果はNode.jsを使って、話し手側のパソコンへ送られます。<br>（顔認識をスマートフォンで試そうとしましたが、セキュリティが厳しく今回は二つのデバイスを使ってのモックはできず、一台のパソコンで全て試しました。）
+      </p>
+      <p class="work">
+        話し手側のパソコンで検出結果をサーバーから受信し、Arduinoを用いて振動にして伝えました。目障り、耳障りにならない触覚的なアプローチ、つまり振動にすることで、画面を見て話をしながら自然と相槌の振動を受けとることができます。
+      </p>
       <div class="photo work"><img src="img/aizuchable/aiz_arduino.jpg"></div>
       <p class="work">腕に装着するバングルには３つの振動モーターが搭載されています。<br>それぞれ強さや振動のタイミングを変えて、7つの相槌にあった振動を探していきました。</p>
       <div class="photo work"><img src="img/aizuchable/aiz_motor.jpg"></div>
       <br>
       <p class="line work"></p>
       <p class="work">アイズッチャブルで相槌を伝えて、快適なオンラインでのコミュニケーションを！</p>
-        <div class="back"><a href="index_works.html">← Back to WORKS</a></div>
+      <div class="back"><a href="index_works.html"><i class="fas fa-chevron-circle-left"></i> Back to WORKS</a></div>
     </div>
+
+    <footer>
+      <div class="footer_list">
+        <a href="mailto:haruka00sawada@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
   </div>
 
   <script type="module" src="./js/ttt_menu_text.js"></script>
