@@ -73,7 +73,7 @@ footer {
           to the top(page)
 *****************************************/
 .ttt {
-  z-index: 10;
+  z-index: 20;
   display: flex;
   position: fixed;
   bottom: 10px;
