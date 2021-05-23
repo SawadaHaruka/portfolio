@@ -74,11 +74,16 @@
       </p>
     </div>
     <div class="bg_movie">
-      <div class="movie">
+      <div id="youtube-area">
+        <div id="youtube"></div><!--youtube表示エリア-->
+        <div id="youtube-mask"></div><!--youtubeマスクエリア-->
+      </div>
+
+      <!-- <div class="movie">
         <iframe width="560" height="315" src="https://www.youtube.com/embed/Efy-Va2huBw?rel=0" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
-      </div>
+      </div> -->
     </div>
     <div class="bg">
       <p class="line work"></p>
@@ -116,35 +121,36 @@
           allowfullscreen></iframe>
       </div>
     </div>
-    <div class="content">
-      <div class="bg_ss">
-        <div class="bg">
-          <br><br>
-          <p class="line work"></p><br>
-          <img class="work" src="img/astrohoop/running.jpg" width="100%">
-          <br><br>
-          <p class="line"></p><br>
-          <img class="work" src="img/astrohoop/magneticboost.jpg" width="100%">
-          <p class="work">専用シューズ「Magnetic
-            Boost」を着用してゲームを行います。靴底の半球は磁石性で、金属製の床に体を固定することができます。靴底がフラットだと靴底全てが床に引きつけられてしまい、移動しづらいと考えたので、半球状のデザインにしました。<br>またMagnetic
-            Boostはワンポイントがチームカラーに発光します。上下も分からなくなるコート内でのチームの目印となります。</p>
-          <br><br>
-          <p class="line work"></p><br>
-          <img class="work" src="img/astrohoop/court.jpg" width="100%">
-          <br><br>
-          <div class="back"><a href="index_works.html"><i class="fas fa-chevron-circle-left"></i> Back to WORKS</a></div>
-        </div>
+
+    <div class="bg_ss">
+      <div class="bg">
+        <br><br>
+        <p class="line work"></p><br>
+        <img class="work" src="img/astrohoop/running.jpg" width="100%">
+        <br><br>
+        <p class="line"></p><br>
+        <img class="work" src="img/astrohoop/magneticboost.jpg" width="100%">
+        <p class="work">専用シューズ「Magnetic
+          Boost」を着用してゲームを行います。靴底の半球は磁石性で、金属製の床に体を固定することができます。靴底がフラットだと靴底全てが床に引きつけられてしまい、移動しづらいと考えたので、半球状のデザインにしました。<br>またMagneticBoostはワンポイントがチームカラーに発光します。上下も分からなくなるコート内でのチームの目印となります。</p>
+        <br><br>
+        <p class="line work"></p><br>
+        <img class="work" src="img/astrohoop/court.jpg" width="100%">
+        
+        <div class="back"><a href="index_works.html"><i class="fas fa-chevron-circle-left"></i> Back to WORKS</a></div>
       </div>
     </div>
+
     <footer>
       <div class="footer_list">
         <a href="mailto:haruka00sawada@gmail.com"><i class="fas fa-envelope"></i></a>
-        <a href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+        <a href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-github"></i></a>
       </div>
     </footer>
   </div>
 
   <script type="module" src="./js/ttt_menu_text.js"></script>
+  <script type="module" src="./js/astrohoop.js"></script>
 </body>
 
 </html>

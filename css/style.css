@@ -49,7 +49,7 @@ img {
           footer
 *****************************************/
 footer {
-  z-index: 0;
+  z-index: 10;
   align-items: center;
   position: absolute;
   bottom:0;
@@ -63,7 +63,6 @@ footer {
 .footer_list{
   margin: 100px 20px 0;
   display: inline-block;
-  color:#70747a;
   margin: 0 auto;
 }
 .footer_list a{
@@ -190,7 +189,7 @@ letter-spacing: 0.05em;
   position: absolute;
   margin: 60px 20vw;
   text-align: center;
-  width: 60vw;
+  width:60vw;
 }
 /* パソコン*/
 #video { display: block !important; }
@@ -204,6 +203,13 @@ letter-spacing: 0.05em;
 @media screen and (max-width: 480px) {
   #video { display: none !important; }
   .sp { display: block !important; }
+
+  #msg{
+    position: absolute;
+    margin: 60px 5vw;
+    text-align: left;
+    width:90vw;
+  }
 }
 
 
@@ -249,6 +255,7 @@ letter-spacing: 0.05em;
   color: #ffffff;
   margin: 0;
   padding: 0 15vw 120px;
+  z-index: 10;
 }
 
 .bg_other {
@@ -264,7 +271,9 @@ letter-spacing: 0.05em;
     font-size: 1em;
   }
   .bg,.bg2,.bg3,.bg4,.bg_s{
+    position: relative;
     padding: 5vw;
+    z-index: 1;
   }
 }
 
@@ -437,6 +446,7 @@ letter-spacing: 0.05em;
   z-index: 5;
 }
 .shinkai_move{
+  position: relative;
   z-index: 0;
   opacity: 0.5;
 }
@@ -620,18 +630,24 @@ ol li:before {
     margin: 5vh 2vw;
   }
 }
+
+
 /****************************************
           works / icon
 *****************************************/
+.works{
+position: absolute;
+}
 .page_top {
-  margin: 0 auto;
-  padding: 120px 0;
+  position: relative;
+  margin: 120px auto;
+  padding: 0;
   text-align: center;
 }
 
 .bg_works {
-  margin: 0 10% 50vh;
-  padding: 0 ;
+  margin: 0 16vw 50vh;
+  padding: 0;
   position: relative;
   display: inline-block;
 }
@@ -639,7 +655,7 @@ ol li:before {
 .thumbnail li {
   list-style: none;
   float: left;
-  margin: 2vw 0vw;
+  margin: 2vw 0;
   padding: 0;
   width: calc(100% / 3);
   position: relative;
@@ -649,9 +665,10 @@ ol li:before {
   position: relative;
   margin: 0 auto;
   float: left;
+
   border-radius: 20px;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
 }
 
@@ -664,8 +681,8 @@ _:future,
 
 .icon_box img {
   border-radius: 20px;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   margin: 0;
   padding: 0;
 
@@ -694,16 +711,16 @@ _:future,
   position: absolute;
   background-color: rgba(0,0,0,0.6);
   border-radius: 20px;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
 }
 
 .caption-text{
   z-index: 6;
   position: absolute;
   color: #fff;
-  width: 25vw;
-  height: 25vw;
+  width: 20vw;
+  height: 20vw;
   text-align: center;
 }
 .caption-text h1{
@@ -728,19 +745,24 @@ _:future,
   border: solid 4px rgb(18, 32, 94);
 }
 
-/* ウィンドウ幅が狭いとき*/
+
+/*スマホ*/
 @media screen and (max-width: 480px) {
+  .page_top {
+    margin: 120px auto 100px;
+  }
+
   .bg_works {
     margin: 0 0 20vh;
     padding: 0;
-    width: 90%;
+    width: 100%;
   }
 
   .thumbnail {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    margin: 100px 0 calc(25vw*2);
+    margin: 0 0 calc(25vw*2);
   }
 
   .thumbnail li {

@@ -1,6 +1,5 @@
 class Top_page {
   constructor() {
-
     document.addEventListener("DOMContentLoaded", this.init(), false);
   }
 
@@ -8,6 +7,20 @@ class Top_page {
     this.video();
     this.two_top();
     this.two_anime();
+
+    //scrolldownをグラデーションの背景色によって変える
+    if (this.random_num == 2 || this.random_num == 5) {
+      let scroll_text = document.querySelector('#scrolldown');
+      scroll_text.style.color = 'rgb(0, 0, 0)';
+      let scroll_line = document.querySelector('.scrolldown');
+      scroll_line.classList.toggle('scroll_');
+    }
+
+    // スマホサイズのときは改行をなくす
+    if (this.s_w <= 480) {
+      this.remove_br();
+
+    }
   }
   video() {//動画の処理
     let video = document.querySelector('#video');
@@ -17,6 +30,16 @@ class Top_page {
         video.load();//初めから再開
       }, 4000);
     })
+  }
+  remove_br() {
+    let msg = document.getElementById('msg2');
+    let br = document.getElementsByClassName('br');
+    let len=br.length;
+
+    console.log(br.length);
+    for (let a = 0; a < len; a++) {
+      msg.removeChild(br[0]);
+    }
   }
   gradation_color() {
     //グラデーションを作る
@@ -31,28 +54,17 @@ class Top_page {
     colors.index = 0;
 
     this.random_num = Math.ceil(Math.random() * 5);
-    console.log(this.random_num);
     let linearGradient = this.two.makeLinearGradient(
       this.s_w / 2, - this.s_h / 2, this.s_w / 2, this.s_h / 2,
       new Two.Stop(0, colors[0]),
       new Two.Stop(1, colors[this.random_num]),
       new Two.Stop(1, colors[0])
     );
-
     return linearGradient;
   }
 
   //フレームのパート
   two_top() {
-    window.addEventListener("DOMContentLoaded", () => {
-      if (this.random_num == 2 || this.random_num == 5) {
-        let scroll_text = document.querySelector('#scrolldown');
-        scroll_text.style.color = 'rgb(0, 0, 0)';
-        let scroll_line = document.querySelector('.scrolldown');
-        scroll_line.classList.toggle('scroll_');
-      }
-    }, false);
-
     this.two = new Two({
       width: window.innerWidth, height: window.innerHeight,
       autostart: true
@@ -65,7 +77,6 @@ class Top_page {
       let frame = this.two.makeRectangle(this.s_w / 2, this.s_h / 2, this.s_w, this.s_h);
       frame.noFill().stroke = this.gradation_color();
       frame.linewidth = 150;
-
       this.two.update();
       //ウィンドウのリサイズによって変える
       window.addEventListener("resize", () => {
@@ -75,6 +86,7 @@ class Top_page {
         frame.translation.set(this.s_w / 2, this.s_h / 2);
         frame.width = this.s_w;
         frame.height = this.s_h;
+
       }, false);
     }
     top_frame();
