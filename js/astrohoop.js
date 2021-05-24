@@ -11,7 +11,7 @@ let player;
 function onYouTubeIframeAPIReady () {
   //動画を埋め込む場所を指定(1.のidを入れる)
   player = new YT.Player('youtube', {
-    videoId: 'Efy-Va2huBw', //YouTUbeの動画IDを入れる
+    videoId: 'Efy-Va2huBw', //YouTubeの動画IDを入れる
     //オプションを設定する場所
     playerVars: {
       playsinline: 1,
