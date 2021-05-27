@@ -1,6 +1,6 @@
 class Txanime {
   constructor() {
-    window.addEventListener("load", this.init());
+    document.addEventListener("DOMContentLoaded", this.init(), false);
   }
 
   ttt_scroll(){
