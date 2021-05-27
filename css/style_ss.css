@@ -43,7 +43,7 @@ img {
   line-height: 2;
 
   margin: 0;
-  padding: 0 18vw;
+  padding: 60px 18vw;
   position: relative;
   background-color: #000000;
 }
@@ -326,5 +326,5 @@ nav {
   
 
   .back{
-    margin: 22vh 0 0;
+    margin: 22vh 0 20vh;
   }

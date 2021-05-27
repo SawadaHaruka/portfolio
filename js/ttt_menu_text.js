@@ -1,4 +1,4 @@
-export class Txanime {
+class Txanime {
   constructor() {
     window.addEventListener("load", this.init());
   }
@@ -41,7 +41,6 @@ export class Txanime {
       duration: 1200,
       distance: '50px', //要素の移動距離
       origin: 'bottom', //要素が移動してくる方向
-      scale: 0.9
     };
     ScrollReveal().reveal('.work', text);
 
@@ -73,6 +72,23 @@ export class Txanime {
       easing: 'ease' 
     };
     ScrollReveal().reveal('.sp_img', sp_img);
+
+    let work2 ={
+      // delay: 500,
+      duration: 300,
+      opacity:0,
+      easing: 'ease' 
+    };
+    ScrollReveal().reveal('.work2', work2);
+
+    let timeup ={
+      delay: 200,
+      duration: 300,
+      opacity:0,
+      scale: 1.6,
+      easing: 'ease-in' 
+    };
+    ScrollReveal().reveal('#timeup', timeup);
   }
 
   init(){
@@ -85,4 +101,4 @@ export class Txanime {
 
 }
 
-let anime = new Txanime();
+const anime = new Txanime();

@@ -100,6 +100,8 @@ nav{
     transform: rotate(45deg);
 }
  
+
+
 /*----------------------------------ここからPCモニターの記述-----------*/
 @media screen and (min-width: 762px) {
  
@@ -159,4 +161,9 @@ nav{
 background-color:transparent;
 }
 
+
+
+.menu_white{
+  color:white;
+}
 }
