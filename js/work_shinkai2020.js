@@ -1,11 +1,10 @@
-export class Shinkai {
+class Shinkai {
   constructor() {
-    this.initCjs();
-    // マウスオーバーを有効にする
-    this.stage.enableMouseOver();
+    window.addEventListener("load", this.initCjs());
     this.set();
+    let rellax = new Rellax('.shinkai_move');
   }
-  
+
   // * createJS を初期化
   initCjs() {
     //キャンバスとステージを設定
@@ -16,9 +15,10 @@ export class Shinkai {
     });
     this.onResize();
 
-    // タッチ操作をサポートしているブラウザーかチェック
-    if (createjs.Touch.isSupported()) {
-      createjs.Touch.enable(this.stage);
+    this.stage.enableMouseOver();
+    if (createjs.Touch.isSupported() == true) {
+      // タッチ操作を有効にします。
+      createjs.Touch.enable(this.stage)
     }
 
     // Ticker を設定
@@ -35,75 +35,71 @@ export class Shinkai {
    *
    */
   onResize(evt = null) {
-    // console.log(window.innerWidth, window.innerHeight);
     let canvas = document.getElementById("cjsCanvas");
+    // console.log(window.innerWidth);
     // 画面幅・高さを取得=>Canvas要素の大きさを画面幅・高さに合わせる
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
+    this.stage.canvas.width = window.innerWidth;
+    this.stage.canvas.height = window.innerHeight;
 
     this.cv_w = canvas.width;
     this.cv_h = canvas.height;
-  } 
 
-  set(){
-    // bubbleを発生させます
+    this.stage.update();
+  }
+
+  set() {
+    // bubble発生
     let bubbles = [];
     this.emitBubbles = () => {
-    //bubble
-    for (let b = 0; b < 1; b++) {
-      let bubble = new createjs.Shape();
+      //bubble
+      for (let b = 0; b < 1; b++) {
+        let bubble = new createjs.Shape();
         bubble.graphics.beginStroke("#fff")
-        bubble.graphics.drawCircle(0, 0, 7*Math.random() );
+        bubble.graphics.drawCircle(0, 0, 7 * Math.random());
         // パーティクルの発生場所
-        bubble.x = Math.random() *this.cv_w;
-        bubble.y = 700 - Math.random()*100;
+        bubble.x = Math.random() * this.cv_w;
+        bubble.y = 700 - Math.random() * 100;
         bubble.alpha = 0;
         // 速度
         bubble.vx = -2 * (Math.random() - 0.5);
         bubble.vy = -2 * (Math.random() - 0.5);
- 
+
         this.stage.addChild(bubble);
         bubbles.push(bubble);
-        createjs.Tween.get(bubble).to({ alpha: Math.random()-0.2}, Math.min(800, Math.random()*1200));
+        createjs.Tween.get(bubble).to({ alpha: Math.random() + 0.1 }, Math.min(800, Math.random() * 1200));
 
-        }
+      }
     }
-      
+
     // bubble更新
     this.updateBubbles = () => {
-        for (let b = 0; b < bubbles.length; b++) {
-          // オブジェクトの作成
-          let bubble = bubbles[b];
-          // 摩擦
-          bubble.vx *= 1.005;
-          bubble.vy -= 0.05;
-          // 速度を位置に適用
-          bubble.x += bubble.vx;
-          bubble.y += bubble.vy;
-          bubble.life -= 1;// 寿命を減らす
-          // 寿命の判定
-          if (bubble.y<=1) {
-            this.stage.removeChild(bubble)// ステージから削除
-            bubbles.splice(b, 1);// 配列からも削除
-          }
+      for (let b = 0; b < bubbles.length; b++) {
+        // オブジェクトの作成
+        let bubble = bubbles[b];
+        // 摩擦
+        bubble.vx *= 1.005;
+        bubble.vy -= 0.05;
+        // 速度を位置に適用
+        bubble.x += bubble.vx;
+        bubble.y += bubble.vy;
+        bubble.life -= 1;// 寿命を減らす
+        // 寿命の判定
+        if (bubble.y <= 1) {
+          this.stage.removeChild(bubble)// ステージから削除
+          bubbles.splice(b, 1);// 配列からも削除
         }
+      }
     }
 
   }
 
-  loop(){
+  loop() {
     this.updateBubbles();
-
-    let emit = Math.floor(Math.random() * 4); 
+    let emit = Math.floor(Math.random() * 4);
     if (emit == 0) {
-      this.emitBubbles();
-    } else if (emit == 3) {
-      // console.log("no update");
-    }
+      this.emitBubbles();//少なめに発生させる
+    } 
   }
-
-
 
 }
-
-let game = new Shinkai();
+const shinkai = new Shinkai();

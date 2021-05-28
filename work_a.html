@@ -1,109 +1,173 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Aizuchable</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon alternate" href="./favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_menu.css">
 
-  <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
-  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./two.min.js"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="header" class="header">
     <nav>
-     <div class="drawer">
-       <div id="logo"><a href="index.html"><img src="img/button.png"></a></div>
-    <div class="Toggle">
-    　　<span></span>
-    　　<span></span>
-    　　<span></span>
-    </div>
+      <div class="drawer">
+        <div id="logo"><a href="index.html"><img src="./favicon.svg" width="40" height="auto"></a></div>
+        <div class="Toggle">
+          　　<span></span>
+          　　<span></span>
+          　　<span></span>
+        </div>
       </div>
-     <div class="menu">
-      <ul>
-        <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
-        <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
-        <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
-      </ul>
-     </div>
+      <div class="menu">
+        <ul>
+          <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
+          <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
+          <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <div class="ttt" id="ttt"><img src="img/ttt.png" alt="to the top" srcset="img/ttt.svg" width="65" height="67"></div>
-  
+
   <div class="content">
     <br>
-    <div class="logo_area">
-        <img src="img/aizuchable/aizuchable.png" alt="Aizuchable" srcset="img/aizuchable/aizuchable.svg" width="auto" height="auto">
+    <div class="logo_aiz">
+      <img src="img/aizuchable/aiz_logo.png" alt="Aizuchable" srcset="img/aizuchable/aiz_logo.svg" width="auto"
+        height="auto">
     </div>
-      <div class="bg">
-        <h1>Aizuchable</h1>
-        <p class="line work"></p>
-        <p class="work">UXデザイン　プロダクトデザイン</p>
-        <p class="work"><strong>課題設定</strong></p>
-        <p class="work">「コミュニケーションのためのプロダクト」</p>
-        <p class="work"><strong>制作期間</strong></p>
-        <p class="work">１ヶ月（授業課題）/ 2020</p>
-        <p class="work"><strong>使用したソフトウェア</strong></p>
-        <p class="work">Visual Studio Code (<strong>JavaScript</strong>) / Arduino / Photoshop / Illustrator / Premiere Pro
-        </p>
-        <ul class="icon-group">
-          <li class="icon"><img src="img/VScode.png" alt="Visual Studio Codeアイコン"srcset="img/VScode.svg"width="55" height="55"></li>
-          <li class="icon"><img src="img/Arduino.png" alt="Arduinoアイコン"srcset="img/Arduino.svg"width="55" height="55"></li>
-          <li class="icon"><img src="img/ps.png" alt="Psアイコン" srcset="img/ps.svg" width="55" height="55"></li>
-          <li class="icon"><img src="img/ai.png" alt="Aiアイコン" srcset="img/ai.svg" width="55" height="55"></li>
-          <li class="icon"><img src="img/pr.png" alt="Prアイコン"srcset="img/pr.svg"width="55" height="55"></li>
-        </ul>
-        <br>
+    <div class="bg">
+      <br>
+      <h1 class="h1_thin">Aizuchable / アイズッチャブル</h1>
+      <p>タイトルの由来 : aizuchi able ＝相槌ができる</p>
+      <p class="line"></p>
+      <p>サービス / UX / プロダクト デザイン</p>
+      <h3>課題設定</h3>
+      <p>「コミュニケーションのためのプロダクト」</p>
+      <h3>制作期間</h3>
+      <p>5週間（授業課題）/ 2020</p>
+      <h3>使用したソフトウェア</h3>
+      <p>Visual Studio Code (<strong>JavaScript</strong>) / Arduino / Photoshop / Illustrator / Premiere
+        Pro
+      </p>
+      <ul class="icon-group">
+        <li class="icon"><img src="img/vscode_icon.png" alt="Visual Studio Codeアイコン" srcset="img/vscode_icon.svg"
+            width="55" height="55"></li>
+        <li class="icon"><img src="img/arduino_icon.png" alt="Arduinoアイコン" srcset="img/arduino_icon.svg" width="55"
+            height="55">
+        </li>
+        <li class="icon"><img src="img/ps_icon.png" alt="Psアイコン" srcset="img/ps_icon.svg" width="55" height="55"></li>
+        <li class="icon"><img src="img/ai_icon.png" alt="Aiアイコン" srcset="img/ai_icon.svg" width="55" height="55"></li>
+        <li class="icon"><img src="img/pr_icon.png" alt="Prアイコン" srcset="img/pr_icon.svg" width="55" height="55"></li>
+      </ul>
+      <br>
     </div>
 
-    <div class="bg2">
+    <div class="bg" id="bg2">
       <h1 class="work">相槌が伝わらない</h1>
       <p class="line work"></p>
       <p class="work">チャットなどのオンライン上のコミュニケーションでは、相槌は伝りません。<br>
         相槌を打つ側は普段、顔や動作に自然とでているものが文字にして打たなければ伝わらないという手間がかかり、話し手側は自分の話がきちんと伝わっているのか不安になります。</p>
-      <div class="svg_pic work"><img src="img/aizuchable/aiz_pp.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp.svg" width="auto" height="auto"></div>
+      <br>
+      <div class="work"><img src="img/aizuchable/aiz_disable.png" alt="Aizuchable" width="100%" height="auto"></div>
     </div>
 
-    <div class="bg">
+    <div class="bg">
       <br>
-          <h1 class="work"><strong>作品説明</strong></h1>
-          <p class="line work"></p>
-          <p class="work">相槌を打つ側のインカメラで顔の表情を認識し、話し手側に振動にして伝えるというシステムとプロダクトを作りました。<br>
-            まず、顔認識のjsライブラリを使い、うなずく動作や首を傾げた時、笑った表情や、話が難しくて顔をしかめた時など、合計７種類の相槌を検出するプログラムを書きました。</p>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_nod.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_nod.svg" width="auto" height="auto"><p>① 軽いうなずき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_yes.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_yes.svg" width="auto" height="auto"><p>② 大きなうなずき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_q.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_q.svg" width="auto" height="auto"><p>③ 疑問に感じたとき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_laugh.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_laugh.svg" width="auto" height="auto"><p>④ 笑ったとき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_bored.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_bored.svg" width="auto" height="auto"><p>⑤ 退屈なとき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_grimace.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_grimace.svg" width="auto" height="auto"><p>⑥ しかめ面なとき</p></div>
-            <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_oh.png" alt="Aizuchable" srcset="img/aizuchable/aiz_pp_oh.svg" width="auto" height="auto"><p>⑦ 驚いたとき</p></div>
-          <br>
-          <p class="line work"></p>
-          <br>
-          <p class="work">そして認識した結果をNode.jsを使い話し手側のパソコンへ送ります。</p>
-          <br>
-          <div class="photo work"><img src="img/aizuchable/aiz_rec.gif"></div>
-          <p class="work">話し手側のパソコンで検出結果をArduinoを用いて振動にして伝えました。目障り、耳障りにならない触覚的なアプローチ、つまり振動にすることで話をしながら自然と相槌の振動は受け取れる形にしました。</p>
-          <div class="photo work"><img src="img/aizuchable/aiz_arduino.jpg"></div>
-          <br>
-          <div class="photo work"><img src="img/aizuchable/aiz_motor.jpg"></div>
-          <br>
-          <p class="work">プログラミング（人生３回目）・プロダクト・ムービー制作。根性でやり切りました</p>
-          <p class="line work"></p>
-          <p class="work"><strong>プレゼン動画</strong></p>
-          <p class="work">リンクをはるか貼らないか。</p>
-          <br>
+      <h1 class="work">作品説明</h1>
+      <p class="line work"></p>
+      <p class="work">アイズッチャブルは、相槌を打つ人のパソコンやスマートフォンのインカメラで顔の表情を認識し、話し手側に振動にして伝えるというサービスを提供します。</p>
+      <br>
+      <div class="work"><img src="img/aizuchable/aiz_able.png" alt="Aizuchable" width="100%" height="auto"></div>
+      <br>
+      <p class="work">五感の内、触覚にして相槌を伝えられれば、画面を見て話に集中しつつ、皮膚からの刺激を認識ができると考え、振動にして相槌を伝えることを考えました。振動は手首に装着した専用バングルに伝わります。</p>
+      <div class="photo work"><img src="img/aizuchable/aiz_bulbul.png"></div>
+      <br>
+      <p class="line work"></p>
+      <h3 class="work">相槌の種類</h3>
+      <p class="work">まず、相槌は大きく分けて以下の４種類が重要になると考えました。①から④までの４種類の相槌は頻繁に行われるものだと考えられるので、感覚的にわかりやすい、単純な振動の種類にしました。<br>
+        例えば①の軽いうなずきは、振動も小さめに一回ブルンと震え、④の笑ったときは笑っている間だけ小さく揺れが続きます。<br>
+        また、特に話に対して③の疑問を持たれたときは、話を進めていく際に最も重要なので最優先にし、大きく少し不快感のある振動を伝えます。</p>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_nod.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_nod.svg" width="auto" height="auto">
+        <p>① 軽いうなずき</p>
+      </div>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_yes.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_yes.svg" width="auto" height="auto">
+        <p>② 大きなうなずき(理解)</p>
+      </div>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_q.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_q.svg" width="auto" height="auto">
+        <p>③ 疑問に感じたとき</p>
+      </div>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_laugh.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_laugh.svg" width="auto" height="auto">
+        <p>④ 笑ったとき</p>
+      </div>
+      <br><br>
+      <p class="work">以下の３種類は感覚的にわかる振動ではありませんが、振動の種類を覚えればより多くの相槌を受け取れるようになっています。</p>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_bored.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_bored.svg" width="auto" height="auto">
+        <p>⑤ 退屈なとき</p>
+      </div>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_grimace.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_grimace.svg" width="auto" height="auto">
+        <p>⑥ しかめ面なとき</p>
+      </div>
+      <div class="aiz_pp work"><img src="img/aizuchable/aiz_pp_oh.png" alt="Aizuchable"
+          srcset="img/aizuchable/aiz_pp_oh.svg" width="auto" height="auto">
+        <p>⑦ 驚いたとき</p>
+      </div>
+      <br><br>
+      <p class="line work"></p>
+      <h1 class="work">プロセス</h1>
+      <p class="work">
+        まず、顔認識のJavaScriptのライブラリを使い、うなずく動作や首を傾げた時、笑った表情や、話が難しくて顔をしかめた時など、合計７種類の相槌を検出するプログラムを書きました。<br><br>これはコードの一部です。
+      </p>
+      <div class="photo work"><img src="img/aizuchable/aiz_code.png"></div>
+      <p class="work">
+        首を傾けたときに生じる鼻根の角度ののずれや、顔をしかめた時の目と眉毛の間の距離、眠くて欠伸をした時に何秒間大きく口が開いたかなどを判断基準とし、細かく正確に相槌を分ける基準を作りました。<br><br>
+        また、相槌を打つ側のパソコンやスマートフォンのインカメラから相槌が処理され種類が判別されると、数字のみがサーバーに送信されるので、サーバーへの負荷は少なくてすみます。<br><br>
+        顔を検出した時はこのような様子になります。</p>
+      <div class="photo work"><img src="img/aizuchable/aiz_rec.gif"></div>
+      <p class="work">笑った時に赤丸の中の数字が①から④になり、笑顔が検出されたことがわかります。<br>
+        （実際のサービス利用時には、この画面は邪魔になってしまうのでプログラム動作の確認用です。）</p>
+      <br>
+      <p class="line work"></p>
+      <br>
+      <p class="work">
+        そして検出した結果はNode.jsを使って、話し手側のパソコンへ送られます。<br>（顔認識をスマートフォンで試そうとしましたが、セキュリティが厳しく今回は二つのデバイスを使ってのモックはできず、一台のパソコンで全て試しました。）
+      </p>
+      <p class="work">
+        話し手側のパソコンで検出結果をサーバーから受信し、Arduinoを用いて振動にして伝えました。目障り、耳障りにならない触覚的なアプローチ、つまり振動にすることで、画面を見て話をしながら自然と相槌の振動を受けとることができます。
+      </p>
+      <div class="photo work"><img src="img/aizuchable/aiz_arduino.jpg"></div>
+      <p class="work">腕に装着するバングルには３つの振動モーターが搭載されています。<br>それぞれ強さや振動のタイミングを変えて、7つの相槌にあった振動を探していきました。</p>
+      <div class="photo work"><img src="img/aizuchable/aiz_motor.jpg"></div>
+      <br>
+      <p class="line work"></p>
+      <p class="work">アイズッチャブルで相槌を伝えて、快適なオンラインでのコミュニケーションを！</p>
+      <div class="back"><a href="index_works.html"><i class="fas fa-chevron-circle-left"></i> Back to WORKS</a></div>
     </div>
+
+    <footer>
+      <div class="footer_list">
+        <a href="mailto:haruka00sawada@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i></a>
+      </div>
+    </footer>
   </div>
 
-  <script type="module" src="./js/Text_anime.js"></script>
+  <script type="module" src="./js/ttt_menu_text.js"></script>
   <script type="module" src="./js/Scroll.js"></script>
 </body>
+
 </html>

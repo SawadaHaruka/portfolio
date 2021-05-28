@@ -5,35 +5,35 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>ドースル</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="icon alternate" href="./favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_menu.css">
 
-  <script src="https://code.createjs.com/1.0.0/easeljs.min.js"></script>
-  <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
-  <script src="./two.min.js"></script>
-
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;500&display=swap" rel="stylesheet">
+  <link href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300&family=Noto+Sans+JP:wght@300;400&display=swap"
+    rel="stylesheet">
 </head>
 
 <body>
   <div id="header" class="header">
     <nav>
-     <div class="drawer">
-       <div id="logo"><a href="index.html"><img src="img/button.png"></a></div>
-    <div class="Toggle">
-    　　<span></span>
-    　　<span></span>
-    　　<span></span>
-    </div>
+      <div class="drawer">
+        <div id="logo"><a href="index.html"><img src="./favicon.svg" width="40" height="auto"></a></div>
+        <div class="Toggle">
+          　　<span></span>
+          　　<span></span>
+          　　<span></span>
+        </div>
       </div>
-     <div class="menu">
-      <ul>
-        <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
-        <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
-        <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
-      </ul>
-     </div>
+      <div class="menu">
+        <ul>
+          <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
+          <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
+          <li class="menu-item"><span class="underline"><a href="index.html">TOP</a></span></li>
+        </ul>
+      </div>
     </nav>
   </div>
   <div class="ttt" id="ttt"><img src="img/ttt.png" alt="to the top" srcset="img/ttt.svg" width="65" height="67"></div>
@@ -41,63 +41,116 @@
   <div class="content">
     <br>
     <div class="logo_area">
-      <img src="img/doosuru/doosuru.png" alt="Doosuru" srcset="img/doosuru/doosuru.svg" width="100%" height="100%">
+      <img src="img/doosuru/doosuru.png" alt="Doosuruロゴ" srcset="img/doosuru/doosuru.svg" width="auto" height="auto">
     </div>
 
     <div class="bg">
-      <h2 class="work">ドースル</h2>
-      <p class="line work"></p>
-      <p class="work">UIデザイン</p>
-      <p class="work">課題設定</p>
-
-      <p class="work"><strong>制作期間</strong></p>
-      <p class="work">１ヶ月（授業課題）/ 2019年</p>
-      <p class="work"><strong>使用したソフトウェア</strong></p>
-      <p class="work">Illustrator / XD</p>
+      <br>
+      <h1 class="h1_thin">Doosuru / ドースル</h1>
+      <p class="line"></p>
+      <p>UI / UX デザイン</p>
+      <h3>課題設定</h3>
+      <p>「Ecological Information System」<br>Information System
+        を21世紀のゴミ問題として捉え，情報伝達システムの仕組みまたはカタチを検討してモデルとして提案する</p>
+      <h3>制作期間</h3>
+      <p>5週間 / 2019年</p>
+      <h3>制作形態</h3>
+      <p>授業課題 / 個人制作</p>
+      <h3>使用したソフトウェア</h3>
+      <p>Illustrator / XD</p>
       <ul class="icon-group">
-        <li class="icon"><img src="img/ai.png" alt="Aiアイコン" srcset="img/ai.svg" width="55" height="55"></li>
-        <li class="icon"><img src="img/xd.png" alt="Xdアイコン" srcset="img/xd.svg" width="55" height="55"></li>
+        <li class="icon"><img src="img/ai_icon.png" alt="Aiアイコン" srcset="img/ai_icon.svg" width="55" height="55"></li>
+        <li class="icon"><img src="img/xd_icon.png" alt="Xdアイコン" srcset="img/xd_icon.svg" width="55" height="55"></li>
       </ul>
     </div>
-    <div class="bg3">
-      <h1 class="work"><strong>情報ゴミ</strong></h1>
-      <p class="line work"></p>
-      <p class="work">広告収入のために増えた中身の薄いゴミサイトは、21世紀における情報のゴミ問題だと考えられます。</p>
+    <div class="bg" id="bg3">
+      <h1><strong>ゴミサイト、どうする？</strong></h1>
+      <p class="line_white"></p>
+      <p class="work">広告収入のために増えた中身の薄いゴミサイトは、21世紀における情報のゴミ問題の一つだと考えられます。</p>
+      <p class="work">ゴミサイトの例にはこのようなものが挙げられます。</p>
+      <ul class="work">
+        <li>不正サイト</li>
+        <li>フェイクニュース</li>
+        <li>まとめサイト</li>
+        <li>医療系サイト（科学的根拠のない情報）</li>
+        <li>〇〇のおすすめ５選（似たような内容ばかり）</li>
+      </ul>
+      <p class="work">大抵これらのようなゴミサイトは広告収入を得るために存在し、検索結果でも上位に上がりやすくなっています。</p>
       <br>
-      <div class="svg_pic work"><img src="img/doosuru/info_garbage.png" alt="Aiアイコン" srcset="img/doosuru/info_garbage.svg" width="auto" height="auto"></div>
-
+      <div class="svg_pic work"><img src="img/doosuru/info_gomi.png" alt="情報ゴミ" width="100%" height="auto"></div>
+      <br>
+    </div>
+    <div class="bg" id="bg4">
+      <h1>ゴミサイトを減らすには</h1>
+      <p class="line_white"></p>
+      <p class="work"><span class="under_white">見る側の意識を変えて</span>やたらとアクセスしないようにする</p>
+      <div class="triangle-bottom work"></div>
+      <p class="work">アクセスしない人が増えれば、広告クリックも減る</p>
+      <div class="triangle-bottom work"></div>
+      <p class="work">記事を書いた人・サイト運営者の収益が減っていく</p>
+      <div class="triangle-bottom work"></div>
+      <p class="work">将来的にゴミサイトを増やす原因の運営を減らしていく</p>
     </div>
     <br>
     <div class="bg">
-      <h1 class="work"><strong>作品説明</strong></h1>
-      <p class="line work"></p>
-      <p class="work">
-        サイトへのアクセスに対してユーザーの意識改革を図るアプリケーションを提案しました。
-        検索アプリ「ドースル」は、サイトにアクセスする際の判断の手助けと無闇にゴミサイトへアクセスしないように抑制を行うアプリです。</p>
-      <p class="work">
-        検索結果一覧の各タイトルの左上にはサイト内の本文の量と広告の量（ad）が円グラフで表示され、また検索結果のトップを下から表示することで戸惑いを誘発します。サイトにアクセスする際には、「開く/やっぱりやめとく」の選択肢が出ます。やめとく場合はその判断に対しアプリから褒め言葉がかけられるためアクセスの抑制につながるでしょう。<br>
-      </p>
-      <div class="photo work"><img src="img/doosuru/doosuru_main.png"></div>
+      <h1><strong>作品説明</strong></h1>
+      <p class="work">検索アプリ「ドースル」は、サイトにアクセスする際の判断の手助けと無闇にゴミサイトへアクセスしないように抑制を行うアプリです。サイトへのアクセスに対してユーザーの意識改革を図ります。</p>
+      <br>
+      <h2 class="fbts">POINTS</h2>
+      <ol>
+        <li class="fbts">
+          <p>検索結果一覧の各タイトルの左上にはサイト内の<span class="under_pink">本文の量</span>と<span
+              class="under_glay">広告の量(ad)</span>が円グラフで表示されます。</p>
+        </li>
+        <p class="tab fbts">---開く前に、中身のおおよその広告の量を見てアクセスするか判断することができます。</p>
+        <li class="fbts">
+          <p>検索結果のトップを下から表示することで違和感や戸惑いを誘発します。</p>
+        </li>
+        <p class="tab fbts">---慣れていない形にすることで今までの検索サイトとは違うものだと、意識改革を行います。</p>
+        <li class="fbts">
+          <p>サイトにアクセスする際には、「開く/やっぱりやめとく」の選択肢が出ます。</p>
+        </li>
+        <p class="tab fbts">---「開く」を押すと普通にサイトを開くことができますが、やっぱりやめとくを選ぶと、あえてサイトを開かないという今までにはなかった選択をしたことに対して褒める言葉が出てきます。</p>
+        <br><br>
+        <div class="photo fbts"><img src="img/doosuru/doosuru_main.png"></div>
+        <br>
+        <li class="fbts">
+          <p>期限のある「あとで読む」機能を備えています。</p>
+        </li>
+        <p class="tab fbts">
+          ---重要度が低いけど少し読みたいかもと思ったページを一時保留することができます。「あとで読む」に追加したサイトは10日間で「あとで読む」内から消えます。<br><br>「必要のない情報も世の中にはありますよ。」というメッセージです。<br><br>また絶対に必要なページはお気に入り内に登録することもできます。
+        </p>
+        <br>
+      </ol>
+      <div class="photo fbts"><img src="img/doosuru/doosuru_sub.png"></div>
+      <br><br>
+      <p class="work">「開く、やめとく、どうする？」<br>
+        判断して、一息置いて、アクセスを減らして、ゴミサイトを作るサイト運営者を減らしていきましょう！</p>
+      <br><br>
+      <p class="line"></p>
+      <br>
+      <p>AdobeXDによるプロトタイプを作成したので、ぜひお試しください。動きが止まってしまうところもありますが、一度読み込んだページは滑らかに動くようになるので、もう一度試してみてください。</p>
+      <br>
+      <div class="bg" id="bg_center">
+        <a href="https://xd.adobe.com/view/f3fd15ff-d0ed-4b3c-be0f-bb1938194611-a6ae/?fullscreen&hints=off"
+          target="_blank" rel="noopener noreferrer" class="btn btn_link">
+          <span>AdobeXDによるプロトタイプ</span>
+        </a>
+      </div>
 
-      <p class="work">
-        また、「あとで読む」機能も備えているため重要度が低いけど読みたいというサイトを一時保留することもできます。「あとで読む」に追加したサイトは10日間で「あとで読む」内から消えます。必要のない情報も世の中にはあります。</p>
-      <div class="photo work"><img src="img/doosuru/doosuru_sub.png"></div>
-      <p class="work">開く、やめとく、どうする？<br>
-        判断して、アクセスを減らして、ゴミサイトを作るサイト運営者を減らしていこう。</p>
-      <br>
-      <p class="line work"></p>
-      <br>
-      <p class="work">AdobeXDによるプロトタイプを作成したので、お試しください。動きが止まってしまうところもありますが、一度読み込んだページは滑らかに動くようになるので、もう一度試してみてください。</p>
-      <br>
-      <a href="https://xd.adobe.com/view/f3fd15ff-d0ed-4b3c-be0f-bb1938194611-a6ae/?fullscreen&hints=off"
-        target="_blank" rel="noopener noreferrer">
-        <div class="link_to_demo">AdobeXDによるプロトタイプ</div>
-      </a>
-
+      <div class="back"><a href="index_works.html"><i class="fas fa-chevron-circle-left"></i> Back to WORKS</a></div>
     </div>
+
+    <footer>
+      <div class="footer_list">
+        <a href="mailto:haruka00sawada@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i
+            class="fab fa-github"></i></a>
+      </div>
+    </footer>
   </div>
 
-  <script type="module" src="./js/Text_anime.js"></script>
+  <script type="module" src="./js/ttt_menu_text.js"></script>
   <script type="module" src="./js/Scroll.js"></script>
 
 </body>

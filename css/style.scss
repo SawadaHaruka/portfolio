@@ -1,0 +1,1017 @@
+$tablet: 762px; //タブレット
+$smap: 480px; //スマフォ
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  background-color: #fff;
+  font-family: "Libre Franklin", sans-serif, "Noto Sans JP", sans-serif;
+  font-weight: 300;
+  font-size: 1.1em;
+  line-height: 2;
+  scroll-behavior: smooth;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-position: inside;
+}
+
+img {
+  margin: 0;
+  padding: 0;
+}
+/****************************************
+          header
+*****************************************/
+.header {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 60px;
+  transition: all 0.5s;
+}
+/****************************************
+          footer
+*****************************************/
+footer {
+  z-index: 10;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  padding: 105px 0 0;
+  width: 100%;
+  height: 150px;
+  background-color: #a6e6ff;
+  .footer_list {
+    margin: 100px 20px 0;
+    display: inline-block;
+    margin: 0 auto;
+    a {
+      margin: 0 5px;
+    }
+  }
+}
+
+/****************************************
+          to the top(page)
+*****************************************/
+.ttt {
+  z-index: 20;
+  display: flex;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  opacity: 0;
+  transition: all 0.6s ease-out;
+  img {
+    transition: 0.6s ease-out;
+  }
+  img:hover {
+    opacity: 0.5;
+  }
+}
+
+/****************************************
+          contents
+*****************************************/
+.content {
+  margin: 0 auto;
+  padding: 0;
+  position: relative;
+  background-color: #fff;
+  color: #000;
+  width: 100%;
+}
+
+.bg {
+  margin: 0 auto;
+  padding: 60px 18vw;
+  position: relative;
+}
+#bg2 {
+  color: #000;
+  background-color: #e5e5e5;
+}
+#bg3 {
+  color: #fff;
+  background-color: #566277;
+}
+#bg4 {
+  color: #fff;
+  padding: 70px 18vw;
+  background-color: #5a719c;
+}
+#bg_red {
+  color: #fff;
+  background-color: #850000;
+}
+#bg_black {
+  color: #fff;
+  background-color: black;
+}
+#bg_s_color {
+  background: linear-gradient(#6ad9f5, #4faceb, #07346b, #000e1f);
+  z-index: 1;
+}
+#bg_s {
+  color: #ffffff;
+  z-index: 10;
+}
+
+#bg_center {
+  z-index: 3;
+  margin: 0 auto;
+  text-align: center;
+  padding: 0;
+}
+
+.bg_other {
+  text-align: center;
+  padding: 30px;
+  position: relative;
+  margin-top: 30px;
+}
+@media screen and (max-width: $tablet) {
+  body {
+    line-height: 1.8;
+    font-size: 1em;
+  }
+  .bg,
+  #bg2,
+  #bg3,
+  #bg4,
+  #bg_s {
+    padding: 60px 5vw;
+  }
+}
+
+.icon {
+  position: static;
+  margin: 10px;
+  display: inline-block;
+}
+
+.line {
+  border-bottom: 1px solid #9e9e9e;
+}
+.line_white {
+  border-bottom: 1px solid #fff;
+}
+
+//一覧に戻る
+.back {
+  margin: 22vh 0 35vh;
+  @media screen and (max-width: $tablet) {
+    margin: 22vh 0 50vh;
+  }
+  a {
+    color: #ff5d78;
+    &:hover {
+      color: #5dc4ff;
+    }
+  }
+}
+
+/****************************************
+          top page
+*****************************************/
+//スクロールを促す
+/*スクロールダウン全体の場所*/
+.scrolldown {
+  z-index: 5;
+  position: absolute;
+  left: 50%;
+  bottom: 1%;
+  height: 50px;
+  &::after {
+    // 線の描写
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 1px;
+    height: 30px;
+    background: rgb(255, 255, 255);
+    /*線の動き1.4秒かけて動く。永遠にループ*/
+    animation: pathmove 1.4s ease-in-out infinite;
+    opacity: 0;
+  }
+}
+/*高さ・位置・透過が変化して線が上から下に動く*/
+@keyframes pathmove {
+  0% {
+    height: 0;
+    top: 0;
+    opacity: 0;
+  }
+  30% {
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    height: 0;
+    top: 50px;
+    opacity: 0;
+  }
+}
+.scroll_::after {
+  background: rgb(0, 0, 0);
+}
+
+#scrolldown_text {
+  //Scrollテキストの描写
+  position: absolute;
+  left: -15px;
+  top: -15px;
+  color: rgb(255, 255, 255);
+  font-size: 0.7rem;
+  letter-spacing: 0.05em;
+}
+
+.SawadaHaruka {
+  display: none;
+}
+
+.video-wrap {
+  z-index: 1;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  margin: 0 auto;
+
+  #video {
+    transform: translate(-50%, -50%);
+    margin: 50vh 50vw;
+    display: block !important; /* パソコン*/
+    @media screen and (max-width: $smap) {
+      display: none !important;
+    }
+  }
+}
+
+#svgStage_anime {
+  z-index: 1;
+  position: relative;
+  width: 100%;
+  margin-top: 100px;
+  #msg {
+    z-index: 3;
+    position: absolute;
+    margin: 60px 20vw;
+    text-align: center;
+    width: 60vw;
+    @media screen and (max-width: $smap) {
+      margin: 60px 5vw;
+      text-align: left;
+      width: 90vw;
+    }
+  }
+}
+
+.smap_logo {
+  display: none !important;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin: 50vh 50vw;
+  @media screen and (max-width: $smap) {
+    display: block !important;
+  }
+}
+
+/****************************************
+          logo_area
+*****************************************/
+.logo_aiz {
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+}
+.logo_aiz img {
+  width: 55%;
+}
+.logo_area {
+  position: relative;
+  text-align: center;
+  margin-top: 120px;
+}
+.logo_area img {
+  width: 33%;
+}
+@media screen and (max-width: 762px) {
+  .logo_aiz img {
+    width: 80%;
+  }
+  .logo_area {
+    width: calc(100vw - 15px);
+    margin-top: 70px;
+  }
+  .logo_area img {
+    width: 80%;
+  }
+}
+
+/****************************************
+          img
+*****************************************/
+.photo {
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+/****************************************
+          Aiz
+*****************************************/
+.svg_pic {
+  margin: 0 auto;
+  width: 80%;
+  height: auto;
+  @media screen and (max-width: 683px) {
+    width: 100%;
+  }
+}
+
+.aiz_pp {
+  display: inline-block;
+  position: relative;
+  margin: auto;
+  width: 24%;
+  height: auto;
+  @media screen and (max-width: 683px) {
+    width: 32%;
+  }
+  p {
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+  }
+}
+
+/****************************************
+          IchigoIchie
+*****************************************/
+.img_i {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  img {
+    width: 50vw;
+    @media screen and (max-width: $tablet) {
+      width: 100vw;
+    }
+  }
+}
+
+/****************************************
+          Shinkai2020
+*****************************************/
+.cjsCanvas {
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+/* 透明な箱 */
+#transparent {
+  z-index: 2;
+  position: absolute;
+  top: 50px;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.button_game {
+  z-index: 3;
+  position: relative;
+  text-align: center;
+  margin: 100px 0 200px;
+  padding: 0;
+  img:hover {
+    transform: scale(0.95);
+  }
+  @media screen and (max-width: $tablet) {
+    img {
+      max-width: 50%;
+    }
+  }
+}
+
+.shinkai_ui_R,
+.shinkai_ui_L {
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.pict {
+  width: 40%;
+  margin-left: 3vw;
+}
+.pict_r {
+  width: 40%;
+  margin-right: 3vw;
+}
+.sp_img {
+  z-index: 5;
+}
+.shinkai_move {
+  position: relative;
+  z-index: 0;
+  opacity: 0.5;
+}
+
+.sk1 {
+  position: absolute;
+  right: 100px;
+  top: 22%;
+}
+.sk2 {
+  position: absolute;
+  left: 50px;
+  top: 33%;
+}
+.sk3 {
+  position: absolute;
+  right: 100px;
+  top: 44%;
+}
+.shinkai_gif {
+  display: inline-block;
+  width: 10%;
+  margin: 0 20px;
+  position: relative;
+}
+
+/****************************************
+          doosuru
+*****************************************/
+.triangle-bottom {
+  margin-left: 20%;
+  display: inline-block;
+  border-style: solid;
+  border-width: 24px 14px 0 14px;
+  border-color: rgb(255, 255, 255) transparent transparent transparent;
+}
+.under_white {
+  border-bottom: solid 2px rgb(255, 255, 255);
+}
+.under_pink {
+  border-bottom: solid 4px rgb(255, 103, 141);
+}
+.under_glay {
+  border-bottom: solid 4px rgb(172, 172, 172);
+}
+.tab {
+  margin-left: 50px;
+  @media screen and (max-width: $tablet) {
+    margin-left: 20px;
+  }
+}
+
+//数字リスト
+ol {
+  counter-reset: number; /*数字をリセット*/
+  list-style-type: none !important; /*数字を一旦消す*/
+  margin-left: -40px;
+  li {
+    position: relative;
+    padding: 0 0 0 50px;
+    &:before {
+      /* 数字をつける */
+      position: absolute;
+      counter-increment: number;
+      content: counter(number);
+      /*数字のデザイン変える*/
+      display: inline-block;
+      background: #ff5d78;
+      color: white;
+      font-size: 15px;
+
+      border-radius: 50%;
+      left: 0;
+      width: 40px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      /*上下中央寄せ*/
+      top: 50%;
+      -webkit-transform: translateY(-50%);
+      transform: translateY(-50%);
+    }
+  }
+}
+
+ol.ol_red li:before {
+  background: #c1272d;
+}
+
+//リンクボタン
+.btn {
+  z-index: 99;
+  font-size: 1.4rem;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  border-radius: 0.5rem;
+}
+
+.btn_link {
+  padding: 1.4rem 4vw;
+  color: #000;
+  border-radius: 0;
+  border: 2px solid #000;
+  cursor: pointer;
+  &:hover {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+}
+/****************************************
+          chaser
+*****************************************/
+.under_red {
+  border-bottom: solid 4px #c1272d;
+}
+#timeup_pa {
+  position: relative;
+}
+#timeup {
+  margin: 0;
+  font-size: 5vw;
+  font-family: "Montserrat", sans-serif;
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+/****************************************
+          produtch
+*****************************************/
+.bg_chat {
+  padding: 50px 0 200px;
+  margin: 0 auto;
+  background-color: #e0f7da;
+  position: relative;
+  text-align: center;
+  @media screen and (max-width: $tablet) {
+    padding: 1px 0 100px;
+  }
+}
+.point {
+  position: relative;
+  left: 5vw;
+  width: 20%;
+  margin: 5vh 0;
+  @media screen and (max-width: $tablet) {
+    left: 2vw;
+  }
+}
+.point img {
+  width: 80%;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+  }
+}
+
+/****************************************
+          others
+*****************************************/
+.img_ow {
+  display: inline-block;
+  width: 45%;
+  height: auto;
+  margin: 10vh 2vw;
+  @media screen and (max-width: $tablet) {
+    width: 100%;
+    height: auto;
+    margin: 5vh 2vw;
+  }
+  & img {
+    width: 100%;
+    display: flex;
+  }
+  & p {
+    text-align: left;
+    font-size: 15px;
+    color: #636363;
+  }
+}
+
+/****************************************
+          works / icon
+*****************************************/
+.works {
+  position: absolute;
+}
+.page_top {
+  position: relative;
+  margin: 200px auto 100px;
+  padding: 0;
+  text-align: center;
+  @media screen and (max-width: $smap) {
+    margin: 120px auto 100px;
+  }
+}
+.bg_works {
+  margin: 0 16vw 5vw;
+  padding: 0;
+  position: relative;
+  display: inline-block;
+  @media screen and (max-width: $smap) {
+    margin: 0 0 20vh;
+    width: 100%;
+  }
+}
+
+.thumbnail {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 0 calc(25vw * 2);
+}
+.thumbnail li {
+  list-style: none;
+  float: left;
+  margin: 2vw 0;
+  padding: 0;
+  width: calc(100% / 3);
+  position: relative;
+  &:hover .icon_box img {
+    transform: scale(1.08);
+  }
+  &:hover .caption {
+    opacity: 1;
+  }
+  @media screen and (max-width: $smap) {
+    width: 100%;
+    height: 100%;
+    margin: 20px;
+
+    &:hover {
+      transform: scale(1);
+    }
+  }
+}
+
+.icon_box {
+  position: relative;
+  margin: 0 auto;
+  float: left;
+
+  border-radius: 20px;
+  width: 20vw;
+  height: 20vw;
+  overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
+  & img {
+    border-radius: 20px;
+    width: 20vw;
+    height: 20vw;
+    margin: 0;
+    padding: 0;
+
+    transform: scale(1);
+    transition-property: transform;
+    transition-duration: 0.5s;
+  }
+  @media screen and (max-width: $smap) {
+    width: 100%;
+    height: 100%;
+    & img {
+      width: 100%;
+      height: 100%;
+      transform: scale(1);
+    }
+  }
+}
+/*safariでは四角にする*/
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box {
+  border-radius: 0px;
+}
+
+.caption {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  transition: all 0.45s ease-in-out;
+  .blur {
+    z-index: 5;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+    width: 20vw;
+    height: 20vw;
+  }
+  .caption-text {
+    z-index: 6;
+    position: absolute;
+    color: #fff;
+    width: 20vw;
+    height: 20vw;
+    text-align: center;
+    h1 {
+      font-size: 24px;
+    }
+  }
+  /*スマホ*/
+  @media screen and (max-width: $smap) {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+    .blur {
+      width: 100%;
+      height: 100%;
+      background-color: rgba(196, 70, 70, 0);
+    }
+    .caption-text {
+      position: relative;
+      top: 1vw;
+      text-align: left;
+      color: black;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+/*safari*/
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box img,
+.blur {
+  border-radius: 0px;
+}
+
+/****************************************
+          about me
+*****************************************/
+.me {
+  position: absolute;
+  left: 65vw;
+  margin-bottom: 100px;
+  & img {
+    width: 30%;
+    padding: 1vw 3vw 0;
+    border: solid 4px rgb(18, 32, 94);
+  }
+  /*スマホ*/
+  @media screen and (max-width: $smap) {
+    position: relative;
+    left: 0vw;
+    text-align: center;
+    & img {
+      width: 50%;
+      padding: 1vw 10vw 0;
+    }
+  }
+}
+
+h2 {
+  font-family: "Noto Sans JP", sans-serif;
+  font-weight: 300;
+}
+
+.h1_thin {
+  font-weight: 300;
+}
+
+/****************************************
+          astrohoop
+*****************************************/
+#body_ah {
+  background-color: #000;
+}
+#content_ah {
+  color: #fff;
+  background-color: #000;
+}
+.main_img {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+#bg_ah {
+  line-height: 2;
+  background-color: #000000;
+  @media screen and (max-width: $tablet) {
+    padding: 4vw;
+  }
+}
+.bg_ss {
+  padding-bottom: 200px;
+}
+.bg_movie {
+  margin: 100px 18vw;
+  background-color: #000000;
+  @media screen and (max-width: $tablet) {
+    padding: 0;
+  }
+  .movie {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.line_white {
+  border-bottom: 1px solid #fff;
+}
+
+/****************************************
+          header
+*****************************************/
+//ロゴの大きさを調整
+#logo img {
+  margin-top: 10px;
+  max-width: 250px;
+  @media screen and (max-width: $tablet) {
+    margin-top: 7px;
+    max-width: 80%;
+  }
+}
+
+nav {
+  width: 100%;
+  height: 70px;
+  position: relative;
+  @media screen and (min-width: $tablet) {
+    display: flex;
+  }
+}
+
+.drawer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  height: 70px;
+  padding: 0 1em;
+}
+
+/*ナビゲーション部分*/
+.menu-item {
+  display: inline-block;
+  font-size: 30px;
+  padding: 0px;
+  @media screen and (min-width: $tablet) {
+    font-size: 25px;
+    margin-right: 20px;
+    a:hover {
+      color: rgb(255, 0, 61);
+      transition: 0.25s;
+    }
+  }
+}
+
+.menu {
+  padding-top: 100px;
+  padding-bottom: 250px;
+  text-align: center;
+  background: #92eadf;
+  transition: 0.5s ease-out; /*滑らかに表示*/
+  transform: translateY(-150%); /*画面より100%外へ押し出し非表示にさせる*/
+  -webkit-transform: translateY(-150%);
+  li {
+    display: block;
+    font-weight: bold;
+    padding: 2em;
+    text-decoration: none;
+  }
+  @media screen and (min-width: $tablet) {
+    width: 100%;
+    background: transparent;
+    margin: 0;
+    padding: 0px;
+    transform: translateY(0); /*画面より100%外へ押し出し非表示にさせる*/
+    -webkit-transform: translateY(0%);
+    ul {
+      height: 70px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+      align-items: center;
+      li {
+        padding: 0 1em;
+        border-bottom: none;
+        &:hover {
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+.menu.open {
+  -webkit-transform: translateY(-10%);
+  transform: translateY(-10%); /*メニューを元の位置へ戻す*/
+}
+
+/*トグルボタンのスタイルを指定*/
+.Toggle {
+  display: block;
+  position: fixed; /* bodyに対しての絶対位置指定 */
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  z-index: 3;
+  right: 15px;
+  @media screen and (min-width: $tablet) {
+    display: none;
+  }
+  span {
+    display: block;
+    position: absolute;
+    width: 35px;
+    border-radius: 2px;
+    border-bottom: solid 2px rgb(0, 0, 0);
+    -webkit-transition: 0.35s ease-in-out; /*変化の速度を指定*/
+    -moz-transition: 0.35s ease-in-out; /*変化の速度を指定*/
+    transition: 0.35s ease-in-out; /*変化の速度を指定*/
+    /*各ボーダー少しずつずらす*/
+    &:nth-child(1) {
+      top: 5px;
+    }
+    &:nth-child(2) {
+      top: 16px;
+    }
+    &:nth-child(3) {
+      top: 28px;
+    }
+  }
+}
+.Toggle.active span {
+  border-bottom: solid 2px rgb(0, 0, 0);
+  /* 1番目のspanをマイナス45度に */
+  &:nth-child(1) {
+    top: 16px;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+  /* 2番目と3番目のspanを45度に */
+  &:nth-child(2),
+  &:nth-child(3) {
+    top: 18px;
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+}
+
+@media screen and (min-width: $tablet) {
+  .underline {
+    background: linear-gradient(to right, #ff003d, #ff003d);
+    background-repeat: no-repeat;
+    background-size: 0% 12%;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    &:hover {
+      background-size: 100% 12%;
+    }
+  }
+}

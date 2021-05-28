@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 export class Txanime {
   constructor() {
     this.ttt=document.getElementById('ttt');
@@ -9,6 +10,14 @@ export class Txanime {
     this.text();
   }
   scroll(){
+=======
+class Txanime {
+  constructor() {
+    document.addEventListener("DOMContentLoaded", this.init(), false);
+  }
+
+  ttt_scroll(){
+>>>>>>> Evol
     window.addEventListener('scroll', ()=> {
       let y = window.pageYOffset;
       if(y<=80){
@@ -46,10 +55,26 @@ export class Txanime {
       duration: 1200,
       distance: '50px', //要素の移動距離
       origin: 'bottom', //要素が移動してくる方向
+<<<<<<< HEAD
       scale: 0.9
     };
     ScrollReveal().reveal('.work', text);
 
+=======
+    };
+    ScrollReveal().reveal('.work', text);
+
+    let fbts = {
+      delay: 100,
+      duration: 1000,
+      distance: '30px',
+      origin: 'bottom',
+      scale: 1.1,
+      interval: 150
+    };
+    ScrollReveal().reveal('.fbts', fbts);
+
+>>>>>>> Evol
     let icon = {
       delay: 100,
       duration: 1000,
@@ -59,8 +84,49 @@ export class Txanime {
       interval: 150
     };
     ScrollReveal().reveal('.icon', icon);
+<<<<<<< HEAD
+=======
+
+    let sp_img = {
+      duration: 1000,
+      distance: '80px',
+      origin: 'bottom',
+      opacity:1,
+      easing: 'ease' 
+    };
+    ScrollReveal().reveal('.sp_img', sp_img);
+
+    let work2 ={
+      // delay: 500,
+      duration: 300,
+      opacity:0,
+      easing: 'ease' 
+    };
+    ScrollReveal().reveal('.work2', work2);
+
+    let timeup ={
+      delay: 200,
+      duration: 300,
+      opacity:0,
+      scale: 1.6,
+      easing: 'ease-in' 
+    };
+    ScrollReveal().reveal('#timeup', timeup);
+  }
+
+  init(){
+    this.ttt=document.getElementById('ttt');
+    this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
+    this.ttt_scroll();
+    this.menu();
+    this.text();
+>>>>>>> Evol
   }
 
 }
 
+<<<<<<< HEAD
 let anime = new Txanime();
+=======
+const anime = new Txanime();
+>>>>>>> Evol
