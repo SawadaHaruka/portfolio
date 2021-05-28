@@ -17,14 +17,23 @@ class Scroll {
         hd.style.background = '#92eadf';
       }
 
-      for (let a = 0; a < len; a++) {
+      for (let a = 0; a < len; a++) {//chaserのページの時のみ変更
         if (y <= 80) {
           menu_white[a].style.color = 'white';
         } else {
           menu_white[a].style.color = 'black';
         }
       }
-
+    });
+    document.addEventListener("DOMContentLoaded",() => {
+      let first_y = window.pageYOffset;
+      for (let b = 0; b < len; b++) {
+        if (first_y <= 80) {
+          menu_white[b].style.color = 'white';
+        } else {
+          menu_white[b].style.color = 'black';
+        }
+      }
     });
 
 

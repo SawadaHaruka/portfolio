@@ -156,7 +156,7 @@ footer .footer_list a {
   z-index: 10;
 }
 
-#bg_center {
+.bg_center {
   z-index: 3;
   margin: 0 auto;
   text-align: center;
@@ -679,15 +679,18 @@ ol.ol_red li:before {
   position: relative;
 }
 
-#timeup {
+#timeup_ch {
+  position: absolute;
+  bottom: 8px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#timeup_ch h1 {
   margin: 0;
   font-size: 5vw;
   font-family: "Montserrat", sans-serif;
-  position: absolute;
-  bottom: 10px;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-  transform: translateX(-50%);
 }
 
 /****************************************
@@ -878,20 +881,12 @@ ol.ol_red li:before {
   }
 }
 
-/*safariでは四角にする*/
-_::-webkit-full-page-media,
-_:future,
-:root .icon_box {
-  border-radius: 0px;
-}
-
 .caption {
   cursor: pointer;
   position: absolute;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
   transition: all 0.45s ease-in-out;
-  /*スマホ*/
 }
 
 .caption .blur {
@@ -938,11 +933,22 @@ _:future,
   }
 }
 
-/*safari*/
+/*safariでは四角にする*/
 _::-webkit-full-page-media,
 _:future,
-:root .icon_box img,
-.blur {
+:root .icon_box {
+  border-radius: 0px;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box img {
+  border-radius: 0px;
+}
+
+_::-webkit-full-page-media,
+_:future,
+:root .blur {
   border-radius: 0px;
 }
 

@@ -2,7 +2,13 @@ class Txanime {
   constructor() {
     document.addEventListener("DOMContentLoaded", this.init(), false);
   }
-
+  init(){
+    this.ttt=document.getElementById('ttt');
+    this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
+    this.ttt_scroll();
+    this.menu();
+    this.text();
+  }
   ttt_scroll(){
     window.addEventListener('scroll', ()=> {
       let y = window.pageYOffset;
@@ -88,16 +94,9 @@ class Txanime {
       scale: 1.6,
       easing: 'ease-in' 
     };
-    ScrollReveal().reveal('#timeup', timeup);
+    ScrollReveal().reveal('#timeup_ch', timeup);
   }
 
-  init(){
-    this.ttt=document.getElementById('ttt');
-    this.ttt.style.cursor = 'pointer'; //リンク用アイコンに変更
-    this.ttt_scroll();
-    this.menu();
-    this.text();
-  }
 
 }
 

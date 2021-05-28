@@ -133,7 +133,7 @@ footer {
   z-index: 10;
 }
 
-#bg_center {
+.bg_center {
   z-index: 3;
   margin: 0 auto;
   text-align: center;
@@ -569,15 +569,16 @@ ol.ol_red li:before {
 #timeup_pa {
   position: relative;
 }
-#timeup {
-  margin: 0;
-  font-size: 5vw;
-  font-family: "Montserrat", sans-serif;
+#timeup_ch {
   position: absolute;
-  bottom: 10px;
+  bottom: 8px;
   left: 50%;
-  -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
+  h1{
+    margin: 0;
+    font-size: 5vw;
+    font-family: "Montserrat", sans-serif;
+  }
 }
 
 /****************************************
@@ -601,14 +602,13 @@ ol.ol_red li:before {
   @media screen and (max-width: $tablet) {
     left: 2vw;
   }
-}
-.point img {
-  width: 80%;
-  @media screen and (max-width: $tablet) {
-    width: 100%;
+  img {
+    width: 80%;
+    @media screen and (max-width: $tablet) {
+      width: 100%;
+    }
   }
 }
-
 /****************************************
           others
 *****************************************/
@@ -622,11 +622,11 @@ ol.ol_red li:before {
     height: auto;
     margin: 5vh 2vw;
   }
-  & img {
+  img {
     width: 100%;
     display: flex;
   }
-  & p {
+  p {
     text-align: left;
     font-size: 15px;
     color: #636363;
@@ -664,27 +664,26 @@ ol.ol_red li:before {
   flex-direction: row;
   flex-wrap: wrap;
   margin: 0 0 calc(25vw * 2);
-}
-.thumbnail li {
-  list-style: none;
-  float: left;
-  margin: 2vw 0;
-  padding: 0;
-  width: calc(100% / 3);
-  position: relative;
-  &:hover .icon_box img {
-    transform: scale(1.08);
-  }
-  &:hover .caption {
-    opacity: 1;
-  }
-  @media screen and (max-width: $smap) {
-    width: 100%;
-    height: 100%;
-    margin: 20px;
-
-    &:hover {
-      transform: scale(1);
+  li {
+    list-style: none;
+    float: left;
+    margin: 2vw 0;
+    padding: 0;
+    width: calc(100% / 3);
+    position: relative;
+    &:hover .icon_box img {
+      transform: scale(1.08);
+    }
+    &:hover .caption {
+      opacity: 1;
+    }
+    @media screen and (max-width: $smap) {
+      width: 100%;
+      height: 100%;
+      margin: 20px;
+      &:hover {
+        transform: scale(1);
+      }
     }
   }
 }
@@ -698,13 +697,12 @@ ol.ol_red li:before {
   width: 20vw;
   height: 20vw;
   overflow: hidden; /*画像拡大時にはみ出た部分を隠す*/
-  & img {
+  img {
     border-radius: 20px;
     width: 20vw;
     height: 20vw;
     margin: 0;
     padding: 0;
-
     transform: scale(1);
     transition-property: transform;
     transition-duration: 0.5s;
@@ -712,18 +710,12 @@ ol.ol_red li:before {
   @media screen and (max-width: $smap) {
     width: 100%;
     height: 100%;
-    & img {
+    img {
       width: 100%;
       height: 100%;
       transform: scale(1);
     }
   }
-}
-/*safariでは四角にする*/
-_::-webkit-full-page-media,
-_:future,
-:root .icon_box {
-  border-radius: 0px;
 }
 
 .caption {
@@ -750,7 +742,6 @@ _:future,
       font-size: 24px;
     }
   }
-  /*スマホ*/
   @media screen and (max-width: $smap) {
     position: relative;
     width: 100%;
@@ -771,11 +762,20 @@ _:future,
     }
   }
 }
-/*safari*/
+/*safariでは四角にする*/
 _::-webkit-full-page-media,
 _:future,
-:root .icon_box img,
-.blur {
+:root .icon_box {
+  border-radius: 0px;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .icon_box img {
+  border-radius: 0px;
+}
+_::-webkit-full-page-media,
+_:future,
+:root .blur {
   border-radius: 0px;
 }
 
