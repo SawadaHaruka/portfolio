@@ -10,7 +10,7 @@ class Top_page {
 
     //scrolldownをグラデーションの背景色によって変える
     if (this.random_num == 2 || this.random_num == 5) {
-      let scroll_text = document.querySelector('#scrolldown');
+      let scroll_text = document.querySelector('#scrolldown_text');
       scroll_text.style.color = 'rgb(0, 0, 0)';
       let scroll_line = document.querySelector('.scrolldown');
       scroll_line.classList.toggle('scroll_');
@@ -32,7 +32,7 @@ class Top_page {
     })
   }
   remove_br() {
-    let msg = document.getElementById('msg2');
+    let msg = document.getElementById('msg1');
     let br = document.getElementsByClassName('br');
     let len=br.length;
 
@@ -68,7 +68,7 @@ class Top_page {
     this.two = new Two({
       width: window.innerWidth, height: window.innerHeight,
       autostart: true
-    }).appendTo(document.getElementById("svgStage_top"));
+    }).appendTo(document.getElementById("svgStage_frame"));
 
     this.s_w = this.two.width;
     this.s_h = this.two.height;

@@ -8,7 +8,6 @@
   <link rel="icon" href="./favicon.svg" type="image/svg+xml">
   <link rel="icon alternate" href="./favicon.png" type="image/png">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/style_menu.css">
 
   <script src="https://code.createjs.com/1.0.0/tweenjs.min.js"></script>
   <script src="https://unpkg.com/scrollreveal"></script>
@@ -30,7 +29,7 @@
           　　<span></span>
         </div>
       </div>
-      <div class="menu">
+      <div class="menu" id="menu_normal">
         <ul>
           <li class="menu-item"><span class="underline"><a href="index_works.html">WORKS</a></span></li>
           <li class="menu-item"><span class="underline"><a href="index_about.html">ABOUT</a></span></li>
@@ -40,26 +39,25 @@
       </div>
     </nav>
   </div>
-  <div class="scrolldown"><span id="scrolldown">Scroll</span></div>
+  <div class="scrolldown"><span id="scrolldown_text">Scroll</span></div>
   <div class="ttt" id="ttt"><img src="img/ttt.png" alt="to the top" srcset="img/ttt.svg" width="65" height="67"></div>
 
 
   <div class="content">
     <div class="video-wrap">
       <video id="video" src="img/movie.mp4" autoplay muted width="60%" height="auto"></video>
-      <img class="sp" src="img/SawadaHaruka.svg" alt="スマホ用ロゴ">
+      <img class="smap_logo" src="img/SawadaHaruka.svg" alt="スマホ用ロゴ">
     </div>
 
-    <div id="svgStage_top"></div>
+    <div id="svgStage_frame"></div>
     <div id="svgStage_anime">
       <div id="msg">
-        <h1 id="msg1">たくさん考え、全力の愛を込めて作る。</h1>
-        <div id="msg2">
+        <h1>たくさん考え、全力の愛を込めて作る。</h1>
+        <div id="msg1">
           コツコツとやり遂げるのが得意な性質と、ものづくりが好きなことを生かして、<br class="br">たくさん考え、愛を込めて日々デザインに取り組んでいる。<br class="br">何かを作る際は、何事においても全力を尽くして考え、必要ならば新しいツールにも挑戦して、<br class="br">妥協は一切せず、重い想いを思い思いに込めている。<br><br>まずは自分を、そして人々を、「あ、そりゃいいね。」と<br class="br">共感させて心を動かすようなデザインを目指している。
         </div>
       </div>
     </div>
-
 
       <h1 class="page_top">WORKS</h1>
       <div class="bg_works">
@@ -109,7 +107,7 @@
             </a>
           </li>
           <li>
-            <a href="work_ss.html">
+            <a href="work_ah.html">
               <div class="icon_box"><img src="img/thumbnail/Astrohoop_icon.jpg" alt="Astrohoop_thumbnail"></div>
               <div class="caption">
                 <div class="blur"></div>
