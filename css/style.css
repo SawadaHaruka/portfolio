@@ -12,7 +12,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 ul {
@@ -96,7 +96,7 @@ footer .footer_list a:hover {
 
 .icon_circle:hover {
   background: #00d1ec;
-  border: solid 3px #ffffff;
+  border: solid 3px #fff;
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
@@ -117,7 +117,7 @@ footer .footer_list a:hover {
   height: 50px;
   border-radius: 50%;
   background: #0066ff;
-  border: solid 2px #ffffff;
+  border: solid 2px #fff;
   text-align: center;
   line-height: 50px;
   color: white;
@@ -180,7 +180,7 @@ footer .footer_list a:hover {
 }
 
 #bg_s {
-  color: #ffffff;
+  color: #fff;
   z-index: 10;
 }
 
@@ -764,6 +764,17 @@ ol.ol_red li:before {
 /****************************************
           others
 *****************************************/
+.link_otherWorks {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #0066ff;
+}
+
+.link_otherWorks:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
 .img_ow {
   display: inline-block;
   width: 45%;
@@ -1039,7 +1050,7 @@ h2 {
 
 #bg_ah {
   line-height: 2;
-  background-color: #000000;
+  background-color: #000;
 }
 
 @media screen and (max-width: 762px) {
@@ -1054,7 +1065,7 @@ h2 {
 
 .bg_movie {
   margin: 100px 18vw;
-  background-color: #000000;
+  background-color: #000;
 }
 
 @media screen and (max-width: 762px) {

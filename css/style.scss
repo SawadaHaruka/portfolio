@@ -14,7 +14,7 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #000;
 }
 
 ul {
@@ -63,33 +63,33 @@ footer {
     margin: 0 auto;
     a {
       margin: 0 5px;
-      color:white;
+      color: white;
       &:hover {
-        color:white;
+        color: white;
         transition: 0.25s;
       }
     }
   }
 }
-.icon_circle{
+.icon_circle {
   display: inline-block;
   width: 60px;
   height: 60px;
   border-radius: 50%;
   background: rgb(0, 209, 236);
   border: solid 3px rgb(0, 209, 236);
-  text-align:center;
+  text-align: center;
   line-height: 60px;
   &:hover {
-    background:rgb(0, 209, 236);
-    border: solid 3px #ffffff;
+    background: rgb(0, 209, 236);
+    border: solid 3px #fff;
     transition: 0.25s;
   }
 }
 /****************************************
           to the top(page)
 *****************************************/
-.ttt{
+.ttt {
   z-index: 20;
   display: inline-block;
   position: fixed;
@@ -102,12 +102,12 @@ footer {
   height: 50px;
   border-radius: 50%;
   background: rgb(0, 102, 255);
-  border: solid 2px #ffffff;
-  text-align:center;
+  border: solid 2px #fff;
+  text-align: center;
   line-height: 50px;
-  color:white;
+  color: white;
   &:hover {
-    background:rgb(46, 130, 255);
+    background: rgb(46, 130, 255);
     transition: 0.25s;
   }
 }
@@ -155,7 +155,7 @@ footer {
   z-index: 1;
 }
 #bg_s {
-  color: #ffffff;
+  color: #fff;
   z-index: 10;
 }
 
@@ -206,7 +206,7 @@ footer {
     margin: 22vh 0 50vh;
   }
   a {
-    color:rgb(0, 102, 255);
+    color: rgb(0, 102, 255);
     // color: #ff5d78;
     &:hover {
       color: rgb(0, 225, 255);
@@ -639,6 +639,13 @@ ol.ol_red li:before {
 /****************************************
           others
 *****************************************/
+.link_otherWorks {
+   text-decoration-line:none;
+   color: rgb(0, 102, 255);
+  &:hover {
+    text-decoration-line:underline;
+  }
+}
 .img_ow {
   display: inline-block;
   width: 45%;
@@ -858,7 +865,7 @@ h2 {
 }
 #bg_ah {
   line-height: 2;
-  background-color: #000000;
+  background-color: #000;
   @media screen and (max-width: $tablet) {
     padding: 4vw;
   }
@@ -868,7 +875,7 @@ h2 {
 }
 .bg_movie {
   margin: 100px 18vw;
-  background-color: #000000;
+  background-color: #000;
   @media screen and (max-width: $tablet) {
     padding: 0;
   }
@@ -922,7 +929,7 @@ nav {
 }
 
 /*ナビゲーション部分*/
-.menu_item li{
+.menu_item li {
   display: inline-block;
   font-size: 30px;
   padding: 0px;

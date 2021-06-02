@@ -17,7 +17,7 @@ class Scroll {
         hd.style.background = '#92eadf';
       }
 
-      for (let a = 0; a < len; a++) {//chaserのページの時のみ変更
+      for (let a = 0; a < len; a++) {//chaserのページのみ変更
         if (y <= 80) {
           menu_white[a].style.color = 'white';
         } else {
