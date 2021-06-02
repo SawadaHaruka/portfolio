@@ -11,42 +11,32 @@ body {
 }
 
 a {
-  text-decoration: none;
   color: #000;
+  text-decoration: none;
 }
 
 ul {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
 li {
-  margin: 0;
   padding: 0;
+  margin: 0;
   list-style-position: inside;
 }
 
 img {
-  margin: 0;
   padding: 0;
+  margin: 0;
 }
 
-/****************************************
-          header
-*****************************************/
-.header {
-  z-index: 100;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  width: 100%;
-  height: 60px;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+h2 {
+  font-weight: 300;
+}
+
+.h1_thin {
+  font-weight: 300;
 }
 
 /****************************************
@@ -59,15 +49,14 @@ footer {
           align-items: center;
   position: absolute;
   bottom: 0;
-  text-align: center;
   padding: 105px 0 0;
   width: 100%;
   height: 150px;
   background-color: #7df0ff;
+  text-align: center;
 }
 
 footer .footer_list {
-  margin: 100px 20px 0;
   display: inline-block;
   margin: 0 auto;
 }
@@ -77,28 +66,22 @@ footer .footer_list a {
   color: white;
 }
 
-footer .footer_list a:hover {
-  color: white;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
-}
-
 .icon_circle {
   display: inline-block;
   width: 60px;
   height: 60px;
-  border-radius: 50%;
   background: #00d1ec;
   border: solid 3px #00d1ec;
-  text-align: center;
+  border-radius: 50%;
   line-height: 60px;
+  text-align: center;
 }
 
 .icon_circle:hover {
   background: #00d1ec;
   border: solid 3px #fff;
-  -webkit-transition: 0.25s;
-  transition: 0.25s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 /****************************************
@@ -106,21 +89,21 @@ footer .footer_list a:hover {
 *****************************************/
 .ttt {
   z-index: 20;
-  display: inline-block;
   position: fixed;
   bottom: 10px;
   right: 10px;
-  opacity: 0;
-  -webkit-transition: all 0.6s ease-out;
-  transition: all 0.6s ease-out;
+  display: inline-block;
   width: 50px;
   height: 50px;
   border-radius: 50%;
   background: #0066ff;
+  opacity: 0;
   border: solid 2px #fff;
-  text-align: center;
   line-height: 50px;
   color: white;
+  text-align: center;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .ttt:hover {
@@ -133,75 +116,75 @@ footer .footer_list a:hover {
           contents
 *****************************************/
 .content {
-  margin: 0 auto;
-  padding: 0;
   position: relative;
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
   background-color: #fff;
   color: #000;
-  width: 100%;
 }
 
 .bg {
-  margin: 0 auto;
-  padding: 60px 18vw;
   position: relative;
+  padding: 60px 18vw;
+  margin: 0 auto;
 }
 
 #bg2 {
-  color: #000;
   background-color: #e5e5e5;
+  color: #000;
 }
 
 #bg3 {
-  color: #fff;
   background-color: #566277;
+  color: #fff;
 }
 
 #bg4 {
-  color: #fff;
   padding: 70px 18vw;
   background-color: #5a719c;
+  color: #fff;
 }
 
 #bg_red {
-  color: #fff;
   background-color: #850000;
+  color: #fff;
 }
 
 #bg_black {
-  color: #fff;
   background-color: black;
+  color: #fff;
 }
 
 #bg_s_color {
+  z-index: 1;
   background: -webkit-gradient(linear, left top, left bottom, from(#6ad9f5), color-stop(#4faceb), color-stop(#07346b), to(#000e1f));
   background: linear-gradient(#6ad9f5, #4faceb, #07346b, #000e1f);
-  z-index: 1;
 }
 
 #bg_s {
-  color: #fff;
   z-index: 10;
+  color: #fff;
 }
 
 .bg_center {
   z-index: 3;
+  padding: 0;
   margin: 0 auto;
   text-align: center;
-  padding: 0;
 }
 
 .bg_other {
-  text-align: center;
-  padding: 30px;
   position: relative;
+  padding: 30px;
   margin-top: 30px;
+  text-align: center;
 }
 
 @media screen and (max-width: 762px) {
   body {
-    line-height: 1.8;
     font-size: 1em;
+    line-height: 1.8;
   }
   .bg,
   #bg2,
@@ -213,9 +196,8 @@ footer .footer_list a:hover {
 }
 
 .icon {
-  position: static;
-  margin: 10px;
   display: inline-block;
+  margin: 10px;
 }
 
 .line {
@@ -263,7 +245,7 @@ footer .footer_list a:hover {
   width: 1px;
   height: 30px;
   background: white;
-  /*線の動き1.4秒かけて動く。永遠にループ*/
+  /*線の動き1.4秒かけて動く。ループ*/
   -webkit-animation: pathmove 1.4s ease-in-out infinite;
           animation: pathmove 1.4s ease-in-out infinite;
   opacity: 0;
@@ -309,8 +291,8 @@ footer .footer_list a:hover {
 
 #scrolldown_text {
   position: absolute;
-  left: -15px;
   top: -15px;
+  left: -15px;
   color: white;
   font-size: 0.7rem;
   letter-spacing: 0.05em;
@@ -323,17 +305,16 @@ footer .footer_list a:hover {
 .video-wrap {
   z-index: 1;
   position: absolute;
+  margin: 0 auto;
   width: 100vw;
   height: 100vh;
-  margin: 0 auto;
 }
 
 .video-wrap #video {
+  display: block !important;
+  margin: 50vh 50vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 50vh 50vw;
-  display: block !important;
-  /* パソコン*/
 }
 
 @media screen and (max-width: 480px) {
@@ -342,35 +323,12 @@ footer .footer_list a:hover {
   }
 }
 
-#svgStage_anime {
-  z-index: 1;
-  position: relative;
-  width: 100%;
-  margin-top: 100px;
-}
-
-#svgStage_anime #msg {
-  z-index: 3;
-  position: absolute;
-  margin: 60px 20vw;
-  text-align: center;
-  width: 60vw;
-}
-
-@media screen and (max-width: 480px) {
-  #svgStage_anime #msg {
-    margin: 60px 5vw;
-    text-align: left;
-    width: 90vw;
-  }
-}
-
 .smap_logo {
   display: none !important;
   width: 100%;
+  margin: 50vh 50vw;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  margin: 50vh 50vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -379,23 +337,59 @@ footer .footer_list a:hover {
   }
 }
 
+#svgStage_anime {
+  z-index: 1;
+  position: relative;
+  margin-top: 100px;
+  width: 100%;
+}
+
+#svgStage_anime #msg {
+  z-index: 3;
+  position: absolute;
+  margin: 60px 20vw;
+  width: 60vw;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  #svgStage_anime #msg {
+    margin: 60px 5vw;
+    width: 90vw;
+    text-align: left;
+  }
+}
+
 /****************************************
           logo_area
 *****************************************/
 .logo_aiz {
   position: relative;
-  text-align: center;
   margin-top: 120px;
+  text-align: center;
 }
 
 .logo_aiz img {
   width: 55%;
 }
 
+@media screen and (max-width: 762px) {
+  .logo_aiz img {
+    width: 80%;
+  }
+}
+
 .logo_area {
   position: relative;
-  text-align: center;
   margin-top: 120px;
+  text-align: center;
+}
+
+@media screen and (max-width: 762px) {
+  .logo_area {
+    margin-top: 70px;
+    width: calc(100vw - 15px);
+  }
 }
 
 .logo_area img {
@@ -403,13 +397,6 @@ footer .footer_list a:hover {
 }
 
 @media screen and (max-width: 762px) {
-  .logo_aiz img {
-    width: 80%;
-  }
-  .logo_area {
-    width: calc(100vw - 15px);
-    margin-top: 70px;
-  }
   .logo_area img {
     width: 80%;
   }
@@ -442,9 +429,8 @@ footer .footer_list a:hover {
 }
 
 .aiz_pp {
-  display: inline-block;
   position: relative;
-  margin: auto;
+  display: inline-block;
   width: 24%;
   height: auto;
 }
@@ -459,9 +445,9 @@ footer .footer_list a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  text-align: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
 /****************************************
@@ -469,8 +455,6 @@ footer .footer_list a:hover {
 *****************************************/
 .img_i {
   text-align: center;
-  padding: 0;
-  margin: 0;
 }
 
 .img_i img {
@@ -487,10 +471,9 @@ footer .footer_list a:hover {
           Shinkai2020
 *****************************************/
 .cjsCanvas {
+  z-index: 1;
   position: absolute;
   top: 50px;
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
 }
@@ -500,19 +483,16 @@ footer .footer_list a:hover {
   z-index: 2;
   position: absolute;
   top: 50px;
-  margin: 0;
-  padding: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(255, 255, 255, 0);
+  background: transparent;
 }
 
 .button_game {
   z-index: 3;
   position: relative;
-  text-align: center;
   margin: 100px 0 200px;
-  padding: 0;
+  text-align: center;
 }
 
 .button_game img:hover {
@@ -528,10 +508,10 @@ footer .footer_list a:hover {
 
 .shinkai_ui_R,
 .shinkai_ui_L {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -544,23 +524,23 @@ footer .footer_list a:hover {
           justify-content: space-between;
 }
 
-.pict {
+.shinkai_ui_R img,
+.shinkai_ui_L img {
+  z-index: 5;
   width: 40%;
+}
+
+.pict {
   margin-left: 3vw;
 }
 
 .pict_r {
-  width: 40%;
   margin-right: 3vw;
 }
 
-.sp_img {
-  z-index: 5;
-}
-
 .shinkai_move {
+  z-index: -1;
   position: relative;
-  z-index: 0;
   opacity: 0.5;
 }
 
@@ -583,18 +563,18 @@ footer .footer_list a:hover {
 }
 
 .shinkai_gif {
-  display: inline-block;
-  width: 10%;
-  margin: 0 20px;
   position: relative;
+  display: inline-block;
+  margin: 0 20px;
+  width: 10%;
 }
 
 /****************************************
           doosuru
 *****************************************/
-.triangle-bottom {
-  margin-left: 20%;
+.triangle_bottom {
   display: inline-block;
+  margin-left: 20%;
   border-style: solid;
   border-width: 24px 14px 0 14px;
   border-color: white transparent transparent transparent;
@@ -623,11 +603,11 @@ footer .footer_list a:hover {
 }
 
 ol {
+  margin-left: -40px;
   counter-reset: number;
   /*数字をリセット*/
   list-style-type: none !important;
   /*数字を一旦消す*/
-  margin-left: -40px;
 }
 
 ol li {
@@ -640,21 +620,21 @@ ol li:before {
   position: absolute;
   counter-increment: number;
   content: counter(number);
-  /*数字のデザイン変える*/
-  display: inline-block;
-  background: #ff5d78;
-  color: white;
-  font-size: 15px;
-  border-radius: 50%;
-  left: 0;
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  text-align: center;
   /*上下中央寄せ*/
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
+  display: inline-block;
+  /*数字のデザイン変える*/
+  background: #ff5d78;
+  border-radius: 50%;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  color: white;
+  font-size: 15px;
+  line-height: 40px;
+  text-align: center;
 }
 
 ol.ol_red li:before {
@@ -663,37 +643,34 @@ ol.ol_red li:before {
 
 .btn {
   z-index: 99;
-  font-size: 1.4rem;
-  line-height: 1.5;
   position: relative;
   display: inline-block;
   padding: 1rem 4rem;
-  cursor: pointer;
+  border-radius: 0.5rem;
+  font-size: 1.4rem;
+  line-height: 1.5;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
   user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
   text-align: center;
   vertical-align: middle;
-  text-decoration: none;
   letter-spacing: 0.1em;
-  border-radius: 0.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .btn_link {
   padding: 1.4rem 4vw;
-  color: #000;
   border-radius: 0;
   border: 2px solid #000;
-  cursor: pointer;
+  color: #000;
 }
 
 .btn_link:hover {
   background: #000;
   color: #fff;
-  cursor: pointer;
 }
 
 /****************************************
@@ -725,10 +702,10 @@ ol.ol_red li:before {
           produtch
 *****************************************/
 .bg_chat {
+  position: relative;
   padding: 50px 0 200px;
   margin: 0 auto;
   background-color: #e0f7da;
-  position: relative;
   text-align: center;
 }
 
@@ -741,8 +718,8 @@ ol.ol_red li:before {
 .point {
   position: relative;
   left: 5vw;
-  width: 20%;
   margin: 5vh 0;
+  width: 20%;
 }
 
 @media screen and (max-width: 762px) {
@@ -764,43 +741,32 @@ ol.ol_red li:before {
 /****************************************
           others
 *****************************************/
-.link_otherWorks {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  color: #0066ff;
-}
-
-.link_otherWorks:hover {
-  -webkit-text-decoration-line: underline;
-          text-decoration-line: underline;
-}
-
 .img_ow {
   display: inline-block;
+  margin: 10vh 2vw;
   width: 45%;
   height: auto;
-  margin: 10vh 2vw;
 }
 
 @media screen and (max-width: 762px) {
   .img_ow {
+    margin: 5vh 2vw;
     width: 100%;
     height: auto;
-    margin: 5vh 2vw;
   }
 }
 
 .img_ow img {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
 }
 
 .img_ow p {
-  text-align: left;
-  font-size: 15px;
   color: #636363;
+  font-size: 15px;
+  text-align: left;
 }
 
 /****************************************
@@ -813,7 +779,6 @@ ol.ol_red li:before {
 .page_top {
   position: relative;
   margin: 200px auto 100px;
-  padding: 0;
   text-align: center;
 }
 
@@ -824,16 +789,14 @@ ol.ol_red li:before {
 }
 
 .bg_works {
-  margin: 0 16vw 5vw;
-  padding: 0;
   position: relative;
   display: inline-block;
+  margin: 0 16vw 5vw;
 }
 
 @media screen and (max-width: 480px) {
   .bg_works {
     margin: 0 0 20vh;
-    width: 100%;
   }
 }
 
@@ -851,12 +814,11 @@ ol.ol_red li:before {
 }
 
 .thumbnail li {
-  list-style: none;
+  position: relative;
   float: left;
   margin: 2vw 0;
-  padding: 0;
   width: calc(100% / 3);
-  position: relative;
+  list-style: none;
 }
 
 .thumbnail li:hover .icon_box img {
@@ -870,9 +832,9 @@ ol.ol_red li:before {
 
 @media screen and (max-width: 480px) {
   .thumbnail li {
+    margin: 20px;
     width: 100%;
     height: 100%;
-    margin: 20px;
   }
   .thumbnail li:hover {
     -webkit-transform: scale(1);
@@ -882,11 +844,10 @@ ol.ol_red li:before {
 
 .icon_box {
   position: relative;
-  margin: 0 auto;
   float: left;
-  border-radius: 20px;
   width: 20vw;
   height: 20vw;
+  border-radius: 20px;
   overflow: hidden;
   /*画像拡大時にはみ出た部分を隠す*/
 }
@@ -895,8 +856,6 @@ ol.ol_red li:before {
   border-radius: 20px;
   width: 20vw;
   height: 20vw;
-  margin: 0;
-  padding: 0;
   -webkit-transform: scale(1);
           transform: scale(1);
   -webkit-transition-property: -webkit-transform;
@@ -915,13 +874,10 @@ ol.ol_red li:before {
   .icon_box img {
     width: 100%;
     height: 100%;
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 
 .caption {
-  cursor: pointer;
   position: absolute;
   opacity: 0;
   -webkit-transition: all 0.45s ease-in-out;
@@ -931,23 +887,23 @@ ol.ol_red li:before {
 .caption .blur {
   z-index: 5;
   position: absolute;
-  background-color: rgba(0, 0, 0, 0.6);
-  border-radius: 20px;
   width: 20vw;
   height: 20vw;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 20px;
 }
 
 .caption .caption-text {
   z-index: 6;
   position: absolute;
-  color: #fff;
   width: 20vw;
   height: 20vw;
+  color: #fff;
   text-align: center;
 }
 
 .caption .caption-text h1 {
-  font-size: 24px;
+  font-size: 23px;
 }
 
 @media screen and (max-width: 480px) {
@@ -965,10 +921,10 @@ ol.ol_red li:before {
   .caption .caption-text {
     position: relative;
     top: 1vw;
-    text-align: left;
-    color: black;
     width: 100%;
     height: 100%;
+    text-align: left;
+    color: black;
   }
 }
 
@@ -1002,30 +958,32 @@ _:future,
 }
 
 .me img {
-  width: 30%;
   padding: 1vw 3vw 0;
+  width: 30%;
   border: solid 4px #12205e;
 }
 
 @media screen and (max-width: 480px) {
   .me {
     position: relative;
-    left: 0vw;
+    left: 0;
     text-align: center;
   }
   .me img {
-    width: 50%;
     padding: 1vw 10vw 0;
+    width: 50%;
   }
 }
 
-h2 {
-  font-family: "Noto Sans JP", sans-serif;
-  font-weight: 300;
+.link_otherWorks {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  color: #0066ff;
 }
 
-.h1_thin {
-  font-weight: 300;
+.link_otherWorks:hover {
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
 }
 
 /****************************************
@@ -1036,21 +994,20 @@ h2 {
 }
 
 #content_ah {
-  color: #fff;
   background-color: #000;
+  color: #fff;
 }
 
 .main_img {
   position: relative;
   width: 100%;
   height: auto;
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin: 10vh 0;
 }
 
 #bg_ah {
-  line-height: 2;
   background-color: #000;
+  line-height: 2;
 }
 
 @media screen and (max-width: 762px) {
@@ -1070,7 +1027,7 @@ h2 {
 
 @media screen and (max-width: 762px) {
   .bg_movie {
-    padding: 0;
+    margin: 0;
   }
 }
 
@@ -1095,6 +1052,21 @@ h2 {
 /****************************************
           header
 *****************************************/
+.header {
+  z-index: 100;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 #logo img {
   margin-top: 10px;
   max-width: 250px;
@@ -1108,9 +1080,9 @@ h2 {
 }
 
 nav {
+  position: relative;
   width: 100%;
   height: 70px;
-  position: relative;
 }
 
 @media screen and (min-width: 762px) {
@@ -1122,6 +1094,7 @@ nav {
 }
 
 .drawer {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1135,7 +1108,6 @@ nav {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: relative;
   height: 70px;
   padding: 0 1em;
 }
@@ -1143,20 +1115,19 @@ nav {
 /*ナビゲーション部分*/
 .menu_item li {
   display: inline-block;
-  font-size: 30px;
   padding: 0px;
+  font-size: 30px;
 }
 
 @media screen and (min-width: 762px) {
   .menu_item li {
-    font-size: 25px;
     margin-right: 20px;
+    font-size: 25px;
   }
 }
 
 .menu {
-  padding-top: 100px;
-  padding-bottom: 250px;
+  padding: 100px 0 250px;
   text-align: center;
   background: #92eadf;
   -webkit-transition: 0.5s ease-out;
@@ -1169,8 +1140,8 @@ nav {
 
 .menu li {
   display: block;
-  font-weight: bold;
   padding: 2em;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -1179,13 +1150,12 @@ nav {
     width: 100%;
     background: transparent;
     margin: 0;
-    padding: 0px;
+    padding: 0;
     transform: translateY(0);
     /*画面より100%外へ押し出し非表示にさせる*/
     -webkit-transform: translateY(0%);
   }
   .menu ul {
-    height: 70px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1197,13 +1167,14 @@ nav {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    height: 70px;
   }
   .menu ul li {
     padding: 0 1em;
     border-bottom: none;
   }
   .menu ul li:hover {
-    background-color: transparent;
+    background: transparent;
   }
 }
 
@@ -1215,14 +1186,14 @@ nav {
 
 /*トグルボタンのスタイルを指定*/
 .Toggle {
-  display: block;
+  z-index: 3;
   position: fixed;
   /* bodyに対しての絶対位置指定 */
+  right: 15px;
+  display: block;
   width: 42px;
   height: 42px;
   cursor: pointer;
-  z-index: 3;
-  right: 15px;
 }
 
 @media screen and (min-width: 762px) {
@@ -1232,8 +1203,8 @@ nav {
 }
 
 .Toggle span {
-  display: block;
   position: absolute;
+  display: block;
   width: 35px;
   border-radius: 2px;
   border-bottom: solid 2px black;
