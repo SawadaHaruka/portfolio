@@ -1,0 +1,33 @@
+/*--------header--------*/
+.header {
+  background-color: #000;
+}
+
+.menu {
+  background: linear-gradient(to right, #00ffea, #ffb25a);
+}
+
+.Toggle span {
+  border-bottom: solid 2px rgb(255, 255, 255);
+}
+
+/*--------ここからPCモニターの記述--------*/
+@media screen and (min-width: 762px) {
+  .menu {
+    background: transparent;
+  }
+  .menu_item a {
+    color: #fff;
+  }
+  .menu_item a:hover {
+    color: #b1b1b1;
+    transition: 0.25s;
+  }
+  .underline {
+    background: linear-gradient(to right, #00ffea, #ffd257);
+    background-repeat: no-repeat;
+    background-size: 0% 12%;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+  }
+}

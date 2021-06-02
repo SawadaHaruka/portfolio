@@ -1,0 +1,1 @@
+document.write('<footer><div class="footer_list"><a class="icon_circle" href="mailto:haruka00sawada@gmail.com"><i class="fas fa-envelope fa-lg"></i></a><a class="icon_circle" href="https://github.com/SawadaHaruka" target="_blank" rel="noopener noreferrer"><i class="fab fa-github fa-lg"></i></a></div></footer>');

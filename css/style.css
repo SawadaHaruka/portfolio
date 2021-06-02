@@ -1130,14 +1130,14 @@ nav {
 }
 
 /*ナビゲーション部分*/
-.menu-item {
+.menu_item li {
   display: inline-block;
   font-size: 30px;
   padding: 0px;
 }
 
 @media screen and (min-width: 762px) {
-  .menu-item {
+  .menu_item li {
     font-size: 25px;
     margin-right: 20px;
   }
