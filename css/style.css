@@ -524,18 +524,28 @@ footer .footer_list a {
           justify-content: space-between;
 }
 
-.shinkai_ui_R img,
-.shinkai_ui_L img {
+.shinkai_ui_R .sp_img,
+.shinkai_ui_L .sp_img {
   z-index: 5;
   width: 40%;
 }
 
-.pict {
+.shinkai_ui_R .pict,
+.shinkai_ui_L .pict {
   margin-left: 3vw;
 }
 
-.pict_r {
+.shinkai_ui_R .pict_r,
+.shinkai_ui_L .pict_r {
   margin-right: 3vw;
+}
+
+.shinkai_gif {
+  display: inline-block;
+  margin: 0 2vw;
+  width: 15%;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
 }
 
 .shinkai_move {
@@ -560,13 +570,6 @@ footer .footer_list a {
   position: absolute;
   right: 100px;
   top: 44%;
-}
-
-.shinkai_gif {
-  position: relative;
-  display: inline-block;
-  margin: 0 20px;
-  width: 10%;
 }
 
 /****************************************

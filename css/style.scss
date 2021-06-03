@@ -423,24 +423,29 @@ footer {
   align-items: center;
   flex-direction: row;
   justify-content: space-between;
-  img {
+  .sp_img {
     z-index: 5;
     width: 40%;
   }
+  .pict {
+    margin-left: 3vw;
+  }
+  .pict_r {
+    margin-right: 3vw;
+  }
 }
-.pict {
-  margin-left: 3vw;
+.shinkai_gif {
+  display: inline-block;
+  margin: 0 2vw;
+  width: 15%;
+  -webkit-transform: translateY(20%);
+  transform: translateY(20%);
 }
-.pict_r {
-  margin-right: 3vw;
-}
-
 .shinkai_move {
   z-index: -1;
   position: relative;
   opacity: 0.5;
 }
-
 .sk1 {
   position: absolute;
   right: 100px;
@@ -455,12 +460,6 @@ footer {
   position: absolute;
   right: 100px;
   top: 44%;
-}
-.shinkai_gif {
-  position: relative;
-  display: inline-block;
-  margin: 0 20px;
-  width: 10%;
 }
 
 /****************************************
